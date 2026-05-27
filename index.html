@@ -597,7 +597,7 @@ const mObs = new IntersectionObserver(entries => {
 }, { threshold: 0.2 });
 document.querySelectorAll('.project-card.featured').forEach(c => mObs.observe(c));
 
-/* ── PREMIUM CUSTOM CURSOR ── */
+/* ── PREMIUM CUSTOM CURSOR WITH MOUSE TRACKING ── */
 (function() {
   const dot = document.createElement('div');
   const ring = document.createElement('div');
@@ -640,7 +640,7 @@ document.querySelectorAll('.project-card.featured').forEach(c => mObs.observe(c)
   }, { passive: true });
 
   function tick() {
-    const lerp = 0.15;
+    const lerp = 0.15; // Smoothing factor for ring movement
     ringX += (mouseX - ringX) * lerp;
     ringY += (mouseY - ringY) * lerp;
     
