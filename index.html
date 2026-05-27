@@ -1,22 +1,708 @@
-<!-- ========================= -->
-<!-- UPDATED HERO ROLE -->
-<!-- ========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mayur Bhosale | DevOps & Cloud Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
 
-<p class="hero-role">
-  DevOps Engineer 
-  <span class="role-sep">//</span> 
-  SRE · AI Infra · LLMOps
-</p>
+<canvas id="canvas"></canvas>
 
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-logo">
+    <div class="status-ring"><div class="status-dot"></div></div>
+    <span class="logo-text">mayur<span class="logo-accent">@devops</span><span class="logo-muted">:~$</span></span>
+  </div>
+  <div class="nav-links">
+    <a href="#about">about</a>
+    <a href="#skills">skills</a>
+    <a href="#projects">projects</a>
+    <a href="#experience">experience</a>
+    <a href="#contact">contact</a>
+  </div>
+  <div class="nav-cta">
+    <a href="#contact" class="nav-cta-btn">BOOK A CALL</a>
+  </div>
+</nav>
 
-<!-- ========================= -->
-<!-- UPDATED TERMINAL FOCUS -->
-<!-- ========================= -->
+<!-- HERO -->
+<section id="about">
+  <div class="hero-container">
 
-<div class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"focus"</span>: [</div>
-<div class="t-line t-out">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"CI/CD Pipelines"</span>,</div>
-<div class="t-line t-out">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"Kubernetes &amp; Cloud Infra"</span>,</div>
-<div class="t-line t-out">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"DevSecOps"</span>,</div>
-<div class="t-line t-out">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"LLM &amp; GPU Infrastructure"</span>,</div>
-<div class="t-line t-out">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"Agentic AI Systems"</span></div>
-<div class="t-line t-out">&nbsp;&nbsp;]</div>
+    <!-- LEFT: terminal -->
+    <div class="hero-terminal fade-up">
+      <div class="term-header">
+        <div class="dots">
+          <span class="dot dot-r"></span>
+          <span class="dot dot-y"></span>
+          <span class="dot dot-g"></span>
+        </div>
+        <span class="term-title">mayur@devops — zsh — 120×40</span>
+        <span class="term-icon">⌘</span>
+      </div>
+      <div class="term-body">
+        <div class="t-line"><span class="t-prompt">$ </span><span class="t-cmd">cat profile.json</span></div>
+        <div class="t-line t-out">{</div>
+        <div class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"name"</span>: <span class="t-str">"Mayur Bhosale"</span>,</div>
+        <div class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"role"</span>: <span class="t-str">"DevOps &amp; Cloud Engineer"</span>,</div>
+        <div class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"experience"</span>: <span class="t-num">2</span>,</div>
+        <div class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"certs"</span>: [</div>
+        <div class="t-line t-out">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"AWS Solutions Architect Associate"</span>,</div>
+        <div class="t-line t-out">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"GCP Associate Cloud Engineer"</span></div>
+        <div class="t-line t-out">&nbsp;&nbsp;],</div>
+        <div class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"location"</span>: <span class="t-str">"Pune, India 🇮🇳"</span>,</div>
+        <div class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"status"</span>: <span class="t-red">"open_to_opportunities"</span>,</div>
+        <div class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"focus"</span>: [</div>
+        <div class="t-line t-out">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"CI/CD Pipelines"</span>,</div>
+        <div class="t-line t-out">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"Kubernetes &amp; Cloud Infra"</span>,</div>
+        <div class="t-line t-out">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"DevSecOps"</span>,</div>
+        <div class="t-line t-out">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"LLM Inference Serving"</span></div>
+        <div class="t-line t-out">&nbsp;&nbsp;]</div>
+        <div class="t-line t-out">}</div>
+        <div class="t-line" style="margin-top:10px">
+          <span class="t-prompt">$ </span><span class="t-cursor"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: hero text -->
+    <div class="hero-text fade-up" style="transition-delay:0.15s">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>Available for DevOps · SRE · Cloud Roles
+      </div>
+      <h1 class="hero-heading">
+        Mayur<br><span class="accent">Bhosale</span>
+      </h1>
+      <p class="hero-role">DevOps Engineer <span class="role-sep">//</span> SRE & LLM </p>
+      <p class="hero-bio">
+        2 years building production-grade CI/CD pipelines, Kubernetes platforms, and cloud infrastructure on AWS &amp; GCP.
+        Certified AWS SA &amp; GCP ACE. Passionate about DevSecOps, GitOps, and GPU inference serving.
+      </p>
+      <div class="cert-row">
+        <div class="cert-pill">☁️ AWS SA Associate</div>
+        <div class="cert-pill">🌐 GCP Cloud Engineer</div>
+      </div>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">$ ls ./projects</a>
+        <a href="https://www.linkedin.com/in/mayurbhosale2299/" target="_blank" class="btn btn-outline">LinkedIn ↗</a>
+        <a href="https://github.com/mayur0522" target="_blank" class="btn btn-outline">GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-wrap">
+    <div class="section-label fade-up">// skills</div>
+    <h2 class="section-heading fade-up">The <span class="accent">stack</span></h2>
+
+    <!-- Pipeline -->
+    <div class="pipeline-wrap fade-up">
+      <div class="pipeline">
+        <div class="pipe-stage">
+          <div class="pipe-icon">📁</div>
+          <div class="pipe-name">Source</div>
+          <div class="pipe-tools">
+            <span class="pt active">Git</span>
+            <span class="pt active">GitHub</span>
+            <span class="pt active">GitLab</span>
+          </div>
+        </div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-stage">
+          <div class="pipe-icon">🔨</div>
+          <div class="pipe-name">Build</div>
+          <div class="pipe-tools">
+            <span class="pt active">Docker</span>
+            <span class="pt active">Maven</span>
+            <span class="pt active">Helm</span>
+          </div>
+        </div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-stage">
+          <div class="pipe-icon">🔍</div>
+          <div class="pipe-name">Scan</div>
+          <div class="pipe-tools">
+            <span class="pt active">SonarQube</span>
+            <span class="pt active">Trivy</span>
+            <span class="pt active">OWASP ZAP</span>
+          </div>
+        </div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-stage">
+          <div class="pipe-icon">⚙️</div>
+          <div class="pipe-name">CI/CD</div>
+          <div class="pipe-tools">
+            <span class="pt active">Jenkins</span>
+            <span class="pt active">GH Actions</span>
+            <span class="pt active">ArgoCD</span>
+          </div>
+        </div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-stage">
+          <div class="pipe-icon">🚀</div>
+          <div class="pipe-name">Deploy</div>
+          <div class="pipe-tools">
+            <span class="pt active">EKS/GKE</span>
+            <span class="pt active">Helm</span>
+            <span class="pt active">Kustomize</span>
+          </div>
+        </div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-stage">
+          <div class="pipe-icon">📊</div>
+          <div class="pipe-name">Monitor</div>
+          <div class="pipe-tools">
+            <span class="pt active">Prometheus</span>
+            <span class="pt active">Grafana</span>
+            <span class="pt active">CloudWatch</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skill cards -->
+    <div class="skill-grid">
+      <div class="skill-card fade-up">
+        <div class="skill-card-header"><span class="sk-icon">☁️</span><span class="sk-title">Cloud Platforms</span></div>
+        <div class="sk-tags">
+          <span>AWS EC2/EKS/S3</span><span>RDS · Lambda</span><span>IAM · VPC</span>
+          <span>Route 53 · SNS</span><span>GCP Compute</span><span>GKE · BigQuery</span><span>Cloud Functions</span>
+        </div>
+      </div>
+      <div class="skill-card fade-up" style="transition-delay:0.05s">
+        <div class="skill-card-header"><span class="sk-icon">📦</span><span class="sk-title">Containers &amp; Orchestration</span></div>
+        <div class="sk-tags">
+          <span>Docker</span><span>Kubernetes</span><span>Helm</span>
+          <span>ArgoCD</span><span>Kustomize</span><span>Istio</span><span>EKS · GKE · AKS</span>
+        </div>
+      </div>
+      <div class="skill-card fade-up" style="transition-delay:0.1s">
+        <div class="skill-card-header"><span class="sk-icon">🔧</span><span class="sk-title">Infrastructure as Code</span></div>
+        <div class="sk-tags">
+          <span>Terraform</span><span>Ansible</span><span>CloudFormation</span><span>Pulumi</span><span>Vault</span>
+        </div>
+      </div>
+      <div class="skill-card fade-up" style="transition-delay:0.15s">
+        <div class="skill-card-header"><span class="sk-icon">🔐</span><span class="sk-title">DevSecOps</span></div>
+        <div class="sk-tags">
+          <span>SonarQube</span><span>Trivy</span><span>OWASP ZAP</span>
+          <span>HashiCorp Vault</span><span>Open Telemetry</span><span>OpenObserve</span>
+        </div>
+      </div>
+      <div class="skill-card fade-up" style="transition-delay:0.2s">
+        <div class="skill-card-header"><span class="sk-icon">📈</span><span class="sk-title">Monitoring &amp; Observability</span></div>
+        <div class="sk-tags">
+          <span>Prometheus</span><span>Grafana</span><span>ELK Stack</span>
+          <span>CloudWatch</span><span>Azure Monitor</span><span>Log Analytics</span>
+        </div>
+      </div>
+      <div class="skill-card fade-up" style="transition-delay:0.25s">
+        <div class="skill-card-header"><span class="sk-icon">💻</span><span class="sk-title">Scripting &amp; Automation</span></div>
+        <div class="sk-tags">
+          <span>Bash · Shell</span><span>Python</span><span>YAML</span><span>Cron Jobs</span><span>Linux (RHEL/CentOS)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-wrap">
+    <div class="section-label fade-up">// projects</div>
+    <h2 class="section-heading fade-up">Personal <span class="accent">projects</span></h2>
+    <p class="section-sub fade-up">Production-grade DevOps implementations &amp; real-world infrastructure solutions.</p>
+
+    <div class="project-grid">
+
+      <!-- FEATURED: LLM Deployment -->
+      <div class="project-card featured fade-up">
+        <div class="proj-topbar">
+          <div class="proj-number">P-04</div>
+          <div class="proj-score">
+            <span class="score-label">Score</span>
+            <span class="score-val">7.8</span>
+            <span class="score-stars">⭐⭐⭐⭐</span>
+          </div>
+        </div>
+        <div class="proj-tags">
+          <span class="proj-tag tag-ai">AI/ML</span>
+          <span class="proj-tag tag-k8s">Kubernetes</span>
+          <span class="proj-tag tag-gpu">GPU</span>
+        </div>
+        <h3 class="proj-title">LLM Deployment on Kubernetes</h3>
+        <p class="proj-subtitle">vLLM · PagedAttention · Tensor Parallelism</p>
+        <p class="proj-desc">
+          High-performance GPU LLM inference with vLLM on Kubernetes.
+          Implements PagedAttention, continuous batching, and tensor parallelism for
+          state-of-the-art serving efficiency. GPU scheduling via NVIDIA device plugin,
+          containerized HuggingFace model deployment at production scale.
+        </p>
+        <div class="proj-metrics">
+          <div class="metric">
+            <span class="metric-label">AI/ML Integration</span>
+            <div class="metric-bar"><div class="metric-fill" style="width:100%"></div></div>
+            <span class="metric-val">10/10</span>
+          </div>
+          <div class="metric">
+            <span class="metric-label">Tech Breadth</span>
+            <div class="metric-bar"><div class="metric-fill" style="width:80%"></div></div>
+            <span class="metric-val">8/10</span>
+          </div>
+          <div class="metric">
+            <span class="metric-label">Learning Value</span>
+            <div class="metric-bar"><div class="metric-fill" style="width:80%"></div></div>
+            <span class="metric-val">8/10</span>
+          </div>
+          <div class="metric">
+            <span class="metric-label">DevOps Maturity</span>
+            <div class="metric-bar"><div class="metric-fill" style="width:70%"></div></div>
+            <span class="metric-val">7/10</span>
+          </div>
+        </div>
+        <div class="proj-stack">
+          <span>vLLM</span><span>Kubernetes</span><span>NVIDIA Device Plugin</span>
+          <span>HuggingFace</span><span>Python</span><span>Docker</span>
+        </div>
+        <div class="proj-footer">
+          <a href="https://github.com/mayur0522" target="_blank" class="proj-link">$ open repo →</a>
+          <span class="proj-highlight">🏆 Niche GPU expertise · top-tier 2025/2026 skill</span>
+        </div>
+      </div>
+
+      <!-- P-01 -->
+      <div class="project-card fade-up" style="transition-delay:0.05s">
+        <div class="proj-topbar">
+          <div class="proj-number">P-01</div>
+        </div>
+        <div class="proj-tags">
+          <span class="proj-tag tag-k8s">Kubernetes</span>
+          <span class="proj-tag tag-cicd">CI/CD</span>
+        </div>
+        <h3 class="proj-title">E-Commerce Platform Modernization</h3>
+        <p class="proj-subtitle">EKS · Helm · Argo-CD · GitHub Actions</p>
+        <p class="proj-desc">
+          Full microservices modernization on AWS EKS with Istio service mesh,
+          automated GitOps via Argo-CD, and Vault-based secrets management.
+          Achieved 98% deployment success rate and 30% reduction in incident response time.
+        </p>
+        <div class="proj-stack">
+          <span>EKS</span><span>Istio</span><span>ArgoCD</span>
+          <span>Helm</span><span>Vault</span><span>Kafka</span><span>Cassandra</span>
+        </div>
+        <div class="proj-footer">
+          <a href="https://github.com/mayur0522" target="_blank" class="proj-link">$ open repo →</a>
+        </div>
+      </div>
+
+      <!-- P-02 -->
+      <div class="project-card fade-up" style="transition-delay:0.1s">
+        <div class="proj-topbar">
+          <div class="proj-number">P-02</div>
+        </div>
+        <div class="proj-tags">
+          <span class="proj-tag tag-iac">IaC</span>
+          <span class="proj-tag tag-aws">AWS</span>
+        </div>
+        <h3 class="proj-title">Cloud Infrastructure Automation</h3>
+        <p class="proj-subtitle">Terraform · AWS · Ansible</p>
+        <p class="proj-desc">
+          End-to-end infrastructure provisioning with Terraform modules for VPC, EKS,
+          RDS, and IAM. Ansible playbooks for server config and patching.
+          Saved 400+ man-hours annually through automation.
+        </p>
+        <div class="proj-stack">
+          <span>Terraform</span><span>Ansible</span><span>AWS VPC</span><span>IAM</span><span>Bash</span>
+        </div>
+        <div class="proj-footer">
+          <a href="https://github.com/mayur0522" target="_blank" class="proj-link">$ open repo →</a>
+        </div>
+      </div>
+
+      <!-- P-03 -->
+      <div class="project-card fade-up" style="transition-delay:0.15s">
+        <div class="proj-topbar">
+          <div class="proj-number">P-03</div>
+        </div>
+        <div class="proj-tags">
+          <span class="proj-tag tag-monitor">Monitoring</span>
+          <span class="proj-tag tag-devsec">DevSecOps</span>
+        </div>
+        <h3 class="proj-title">Observability &amp; Security Platform</h3>
+        <p class="proj-subtitle">Prometheus · Grafana · OpenTelemetry</p>
+        <p class="proj-desc">
+          Full-stack observability with Prometheus, Grafana dashboards, and OpenTelemetry tracing.
+          Integrated DevSecOps pipeline with SonarQube, Trivy container scanning, and OWASP ZAP.
+          Reduced MTTR by 40%.
+        </p>
+        <div class="proj-stack">
+          <span>Prometheus</span><span>Grafana</span><span>OpenTelemetry</span>
+          <span>Trivy</span><span>OWASP ZAP</span><span>SonarQube</span>
+        </div>
+        <div class="proj-footer">
+          <a href="https://github.com/mayur0522" target="_blank" class="proj-link">$ open repo →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-wrap">
+    <div class="section-label fade-up">// experience</div>
+    <h2 class="section-heading fade-up">Work <span class="accent">history</span></h2>
+
+    <div class="timeline">
+      <div class="tl-item fade-up">
+        <div class="tl-left">
+          <div class="tl-date">May 2025 – Present</div>
+          <div class="tl-dot-wrap"><div class="tl-dot active"></div></div>
+        </div>
+        <div class="tl-right">
+          <div class="tl-company">Instrim Labs LLP, Pune</div>
+          <div class="tl-role">DevOps Engineer</div>
+          <div class="tl-stack">
+            <span>EKS</span><span>Helm</span><span>Terraform</span>
+            <span>GitHub Actions</span><span>ArgoCD</span><span>Vault</span>
+          </div>
+          <ul class="tl-bullets">
+            <li>Administered Kubernetes (EKS) clusters with Helm chart deployments and zero-downtime node upgrades</li>
+            <li>Built YAML-based reusable pipeline templates — <strong>25% increase in pipeline efficiency</strong></li>
+            <li>Provisioned scalable infrastructure with Terraform — <strong>98% deployment success rate</strong></li>
+            <li>Designed monitoring/alerting stack — <strong>30% reduction in incident response time</strong></li>
+            <li>Drove <strong>10% cost reduction</strong> via Amazon Cost Management; saved <strong>400+ man-hours/year</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item fade-up" style="transition-delay:0.1s">
+        <div class="tl-left">
+          <div class="tl-date">Feb – Jul 2024</div>
+          <div class="tl-dot-wrap"><div class="tl-dot"></div></div>
+        </div>
+        <div class="tl-right">
+          <div class="tl-company">Randstad → Varian (Siemens Healthineers)</div>
+          <div class="tl-role">System Administrator / Cloud Engineer</div>
+          <div class="tl-stack">
+            <span>GCP</span><span>Linux</span><span>Python</span><span>Bash</span><span>RPM/YUM</span>
+          </div>
+          <ul class="tl-bullets">
+            <li>Provided L1/L2 support for GCP environments ensuring high availability of critical clinical workloads</li>
+            <li>Automated package installation, patching, and configuration via RPM, YUM, and APT</li>
+            <li>Designed automation workflows reducing manual effort in system configuration tasks</li>
+            <li>Managed user access, service configs, and system health across Linux environments</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Edu + Certs -->
+    <div class="edu-cert-row">
+      <div class="edu-block fade-up">
+        <div class="block-label">// education</div>
+        <div class="edu-item">
+          <div class="edu-degree">Master of Computer Applications</div>
+          <div class="edu-school">Sinhagad Institute of Management, Pune</div>
+          <div class="edu-year">Nov 2022 – Jun 2024</div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-degree">Bachelor of Computer Applications</div>
+          <div class="edu-school">Bharati Vidyapeeth Institute, Kolhapur</div>
+          <div class="edu-year">Apr 2018 – Sep 2021</div>
+        </div>
+      </div>
+
+      <div class="cert-block fade-up" style="transition-delay:0.1s">
+        <div class="block-label">// certifications</div>
+        <div class="cert-item">
+          <div class="cert-badge-big">
+            <span class="cbb-icon">☁️</span>
+            <div>
+              <div class="cbb-title">AWS Certified Solutions Architect</div>
+              <div class="cbb-sub">Associate · Validated</div>
+              <div class="cbb-code">484114bec24b4a04916b9dea69823a22</div>
+            </div>
+          </div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-badge-big">
+            <span class="cbb-icon">🌐</span>
+            <div>
+              <div class="cbb-title">Google Cloud Certified</div>
+              <div class="cbb-sub">Associate Cloud Engineer · Validated</div>
+              <div class="cbb-code">04f6d6fcdb9f434fa02e32fb7456d7f4</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-wrap">
+    <div class="section-label fade-up">// contact</div>
+    <div class="contact-box fade-up">
+      <div class="contact-inner">
+        <div class="contact-left">
+          <div class="open-badge">
+            <span class="ob-dot"></span>
+            System online · Available for opportunities
+          </div>
+          <h2 class="contact-heading">Let's ship something<br><span class="accent">great</span>.</h2>
+          <p class="contact-sub">
+            Open to DevOps Engineer, SRE, and Cloud Engineering roles.<br>
+            Happy to discuss collaborations, open source, and infrastructure challenges.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:mayurbhosalen9@gmail.com" class="contact-link">
+              <span class="cl-icon">✉</span><span>mayurbhosalen9@gmail.com</span><span class="cl-arrow">→</span>
+            </a>
+            <a href="https://www.linkedin.com/in/mayurbhosale2299/" target="_blank" class="contact-link">
+              <span class="cl-icon">⬡</span><span>linkedin.com/in/mayurbhosale2299</span><span class="cl-arrow">→</span>
+            </a>
+            <a href="https://github.com/mayur0522" target="_blank" class="contact-link">
+              <span class="cl-icon">⌥</span><span>github.com/mayur0522</span><span class="cl-arrow">→</span>
+            </a>
+            <a href="tel:+917066117676" class="contact-link">
+              <span class="cl-icon">☎</span><span>+91 7066 117 676</span><span class="cl-arrow">→</span>
+            </a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <div class="contact-terminal">
+            <div class="ct-header">
+              <div class="dots">
+                <span class="dot dot-r"></span>
+                <span class="dot dot-y"></span>
+                <span class="dot dot-g"></span>
+              </div>
+              <span>availability.sh</span>
+            </div>
+            <div class="ct-body">
+              <div class="t-line"><span class="t-prompt">$ </span><span class="t-cmd">./check_availability.sh</span></div>
+              <div class="t-line t-out t-red">✓ Status: AVAILABLE</div>
+              <div class="t-line t-out">✓ Roles: DevOps / SRE / Cloud</div>
+              <div class="t-line t-out">✓ Location: Pune, India</div>
+              <div class="t-line t-out">✓ Remote: YES</div>
+              <div class="t-line t-out">✓ Relocation: Open</div>
+              <div class="t-line t-out" style="margin-top:8px">✓ Notice Period: Negotiable</div>
+              <div class="t-line" style="margin-top:10px"><span class="t-prompt">$ </span><span class="t-cursor"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <span class="footer-logo">mayur<span class="accent">@devops</span></span>
+    <span class="footer-copy">© 2025 Mayur Bhosale · DevOps &amp; Cloud Engineer</span>
+    <span class="footer-right">Pune, India 🇮🇳</span>
+  </div>
+</footer>
+
+<script>
+/* ── CANVAS PARTICLES ── */
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+let W, H;
+const particles = [];
+
+function resize() {
+  W = canvas.width  = window.innerWidth;
+  H = canvas.height = window.innerHeight;
+}
+resize();
+window.addEventListener('resize', resize);
+
+for (let i = 0; i < 60; i++) {
+  particles.push({
+    x:  Math.random() * window.innerWidth,
+    y:  Math.random() * window.innerHeight,
+    vx: (Math.random() - 0.5) * 0.2,
+    vy: (Math.random() - 0.5) * 0.2,
+    r:  Math.random() * 1.4 + 0.3,
+    a:  Math.random() * 0.35 + 0.08
+  });
+}
+
+function draw() {
+  ctx.clearRect(0, 0, W, H);
+  particles.forEach(p => {
+    p.x += p.vx; p.y += p.vy;
+    if (p.x < 0) p.x = W; if (p.x > W) p.x = 0;
+    if (p.y < 0) p.y = H; if (p.y > H) p.y = 0;
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(255, 60, 84, ${p.a})`;
+    ctx.fill();
+  });
+  for (let i = 0; i < particles.length; i++) {
+    for (let j = i + 1; j < particles.length; j++) {
+      const dx = particles[i].x - particles[j].x;
+      const dy = particles[i].y - particles[j].y;
+      const d  = Math.sqrt(dx*dx + dy*dy);
+      if (d < 120) {
+        ctx.beginPath();
+        ctx.strokeStyle = `rgba(255, 60, 84, ${0.07 * (1 - d / 120)})`;
+        ctx.lineWidth = 0.6;
+        ctx.moveTo(particles[i].x, particles[i].y);
+        ctx.lineTo(particles[j].x, particles[j].y);
+        ctx.stroke();
+      }
+    }
+  }
+  requestAnimationFrame(draw);
+}
+draw();
+
+/* ── NAV SCROLL ── */
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 50);
+});
+
+/* ── FADE-UP ── */
+const io = new IntersectionObserver(
+  entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+  { threshold: 0.07 }
+);
+document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+
+/* ── METRIC BARS ── */
+const mObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    e.target.querySelectorAll('.metric-fill').forEach(bar => {
+      const w = bar.style.width;
+      bar.style.width = '0';
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        bar.style.transition = 'width 1.2s cubic-bezier(0.4,0,0.2,1)';
+        bar.style.width = w;
+      }));
+    });
+  });
+}, { threshold: 0.2 });
+document.querySelectorAll('.project-card.featured').forEach(c => mObs.observe(c));
+
+/* ── PREMIUM CUSTOM CURSOR WITH MOUSE TRACKING ── */
+(function() {
+  const dot = document.createElement('div');
+  const ring = document.createElement('div');
+  dot.className = 'custom-cursor-dot';
+  ring.className = 'custom-cursor-ring';
+  document.body.appendChild(dot);
+  document.body.appendChild(ring);
+
+  let mouseX = window.innerWidth / 2;
+  let mouseY = window.innerHeight / 2;
+  let ringX = window.innerWidth / 2;
+  let ringY = window.innerHeight / 2;
+
+  let isHovering = false;
+  let isMouseInWindow = true;
+  let hasMoved = false;
+
+  window.addEventListener('mousemove', (e) => {
+    if (!hasMoved) {
+      hasMoved = true;
+      document.body.classList.add('custom-cursor-active');
+    }
+
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+
+    dot.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+
+    if (isMouseInWindow) {
+      dot.style.opacity = '1';
+      ring.style.opacity = '1';
+    }
+  });
+
+  window.addEventListener('touchstart', () => {
+    hasMoved = false;
+    document.body.classList.remove('custom-cursor-active');
+    dot.style.opacity = '0';
+    ring.style.opacity = '0';
+  }, { passive: true });
+
+  function tick() {
+    const lerp = 0.15; // Smoothing factor for ring movement
+    ringX += (mouseX - ringX) * lerp;
+    ringY += (mouseY - ringY) * lerp;
+
+    ring.style.transform = `translate3d(${ringX}px, ${ringY}px, 0)`;
+
+    requestAnimationFrame(tick);
+  }
+  tick();
+
+  const updateHoverTargets = () => {
+    const targets = document.querySelectorAll('a, button, .btn, .btn-outline, .btn-primary, .project-card, .skill-card, .contact-link, .nav-cta-btn, [role="button"]');
+    targets.forEach(item => {
+      if (item.dataset.cursorBound) return;
+      item.dataset.cursorBound = 'true';
+
+      item.addEventListener('mouseenter', () => {
+        dot.classList.add('hovered');
+        ring.classList.add('hovered');
+        isHovering = true;
+      });
+
+      item.addEventListener('mouseleave', () => {
+        dot.classList.remove('hovered');
+        ring.classList.remove('hovered');
+        isHovering = false;
+      });
+    });
+  };
+
+  updateHoverTargets();
+  setInterval(updateHoverTargets, 1500);
+
+  window.addEventListener('mousedown', () => {
+    if (!hasMoved) return;
+    dot.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0) scale(0.6)`;
+    ring.style.transform = `translate3d(${ringX}px, ${ringY}px, 0) scale(0.85)`;
+    dot.style.backgroundColor = '#ffffff';
+    ring.style.borderColor = '#ffffff';
+  });
+
+  window.addEventListener('mouseup', () => {
+    if (!hasMoved) return;
+    dot.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+    ring.style.transform = `translate3d(${ringX}px, ${ringY}px, 0)`;
+    dot.style.backgroundColor = '';
+    ring.style.borderColor = '';
+  });
+
+  document.addEventListener('mouseleave', () => {
+    dot.style.opacity = '0';
+    ring.style.opacity = '0';
+    isMouseInWindow = false;
+  });
+
+  document.addEventListener('mouseenter', () => {
+    if (hasMoved) {
+      dot.style.opacity = '1';
+      ring.style.opacity = '1';
+    }
+    isMouseInWindow = true;
+  });
+})();
+</script>
+</body>
+</html>
