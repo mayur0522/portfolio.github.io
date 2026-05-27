@@ -19,13 +19,10 @@
   </div>
   <div class="nav-links">
     <a href="#about">about</a>
-    <a href="#skills">skills</a>
-    <a href="#projects">projects</a>
-    <a href="#achievements">achievements</a>
-    <a href="#contact">contact</a>
-  </div>
-  <div class="nav-cta">
-    <a href="#contact" class="nav-cta-btn">BOOK A CALL</a>
+    <a href="#skills">.skills()</a>
+    <a href="#projects">.projects()</a>
+    <a href="#achievements">.achievements()</a>
+    <a href="#contact">.contact()</a>
   </div>
 </nav>
 
@@ -197,6 +194,9 @@
           <span>Prometheus Adapter</span><span>Arize Phoenix Observability</span><span>CloudWatch Logging</span>
         </div>
       </div>
+      <div class="skill-card fade-up" style="transition-delay:0.25s">
+        <div class="skill-card-header"><span class="sk-icon">💻</span><span class="sk-title">Automation &amp; Security</span></div>
+        <div class="sk-tags">
           <span>GitHub Actions CI/CD</span><span>Bash Automation</span><span>Python MLOps Scripts</span><span>Trivy Container Scan</span><span>SonarQube Analysis</span>
         </div>
       </div>
@@ -263,6 +263,93 @@
         </div>
       </div>
 
+      <!-- P-02: DevOps Pipeline Failure Agent -->
+      <div class="project-card fade-up" style="transition-delay:0.05s">
+        <div class="proj-topbar">
+          <div class="proj-number">DEVOPS-AGENT</div>
+          <div class="proj-score">
+            <span class="score-label">MLOps Score</span>
+            <span class="score-val">9.5</span>
+            <span class="score-stars">⭐⭐⭐⭐⭐</span>
+          </div>
+        </div>
+        <div class="proj-tags">
+          <span class="proj-tag tag-ai">AI Agent</span>
+          <span class="proj-tag tag-cicd">CI/CD</span>
+          <span class="proj-tag tag-monitor">Slack webhook</span>
+        </div>
+        <h3 class="proj-title">DevOps Pipeline Failure Agent</h3>
+        <p class="proj-subtitle">Claude API · Qwen3 (Local Ollama) · Python · Slack · Linux / WSL2</p>
+        <p class="proj-desc">
+          An autonomous agentic AI that automatically intercepts failed CI build logs, inspects codebase source files to discover bugs, diagnoses root causes, and posts actionable markdown fix recommendations to Slack channels. Supports dual architectures: Cloud-driven Anthropic Claude API for top-tier reasoning, and 100% local, enterprise-private serving running Qwen3 (14B) via Ollama with zero API cost. Includes strict production guardrails (dry-run, audit logs, scope limits).
+        </p>
+        <div class="proj-stack">
+          <span>Anthropic Claude API</span><span>Qwen3 LLM</span><span>Ollama serving</span><span>Python Agentic Loop</span><span>Slack webhook API</span><span>GitHub Actions</span><span>Linux CLI</span><span>Security Guardrails</span>
+        </div>
+        <div class="proj-footer">
+          <a href="https://github.com/cloudadvocate/devops-agent" target="_blank" class="proj-link">$ open repository →</a>
+          <span class="proj-highlight">🚀 Agentic AI &amp; Self-Healing CI/CD Pipelines</span>
+        </div>
+      </div>
+
+      <!-- P-03: ECOMM-AIOPS -->
+      <div class="project-card fade-up" style="transition-delay:0.1s">
+        <div class="proj-topbar">
+          <div class="proj-number">ECOMM-AIOPS</div>
+          <div class="proj-score">
+            <span class="score-label">AIOps Score</span>
+            <span class="score-val">8.3</span>
+            <span class="score-stars">⭐⭐⭐⭐</span>
+          </div>
+        </div>
+        <div class="proj-tags">
+          <span class="proj-tag tag-k8s">EKS Kubernetes</span>
+          <span class="proj-tag tag-iac">Terraform</span>
+          <span class="proj-tag tag-ai">Bedrock AI Agent</span>
+        </div>
+        <h3 class="proj-title">ECOMM-AIOPS: Boutique Microservices Platform</h3>
+        <p class="proj-subtitle">AWS EKS · Terraform IaC · ArgoCD GitOps · Kustomize · Bedrock Agent "Kira" · Prometheus</p>
+        <p class="proj-desc">
+          A robust multi-tier boutique e-commerce microservices platform hosted on AWS EKS, completely automated via modular Terraform IaC and ArgoCD GitOps sync pipelines. Integrates a reactive AIOps assistant named "Kira" powered by Amazon Bedrock agents and AWS Lambdas to autonomously diagnose real-time cluster incident metrics (Prometheus/Grafana) and log streams (Fluent Bit), reducing MTTR significantly.
+        </p>
+        <div class="proj-stack">
+          <span>AWS EKS</span><span>Terraform</span><span>ArgoCD GitOps</span><span>Kustomize</span><span>Amazon Bedrock</span><span>AWS Lambda</span><span>Prometheus</span><span>Grafana</span><span>Fluent Bit</span><span>Node.js</span>
+        </div>
+        <div class="proj-footer">
+          <a href="https://github.com/mayur0522" target="_blank" class="proj-link">$ open repository →</a>
+          <span class="proj-highlight">☁️ Production EKS Kubernetes &amp; Reactive AIOps</span>
+        </div>
+      </div>
+
+      <!-- P-04: tf-azure-disaster-recovery -->
+      <div class="project-card fade-up" style="transition-delay:0.15s">
+        <div class="proj-topbar">
+          <div class="proj-number">AZURE-DR</div>
+          <div class="proj-score">
+            <span class="score-label">Reliability Score</span>
+            <span class="score-val">9.0</span>
+            <span class="score-stars">⭐⭐⭐⭐⭐</span>
+          </div>
+        </div>
+        <div class="proj-tags">
+          <span class="proj-tag tag-iac">IaC</span>
+          <span class="proj-tag tag-aws">Azure Cloud</span>
+          <span class="proj-tag tag-cicd">Disaster Recovery</span>
+        </div>
+        <h3 class="proj-title">tf-azure-disaster-recovery: Automated Cloud Recovery</h3>
+        <p class="proj-subtitle">Terraform IaC · Azure Infrastructure · Shell Scripting · GitHub Actions</p>
+        <p class="proj-desc">
+          A high-availability enterprise disaster recovery framework. Designed automated cloud provisioning scripts to successfully reconstruct and recover 21+ Azure resources from complete IaC data loss with zero downtime. Ensures single-source-of-truth configuration management, strict IAM boundary security, and active failover resilience.
+        </p>
+        <div class="proj-stack">
+          <span>Terraform Modular IaC</span><span>Azure Resource Manager</span><span>Shell Automation</span><span>GitHub Actions CI</span><span>Active Failover</span>
+        </div>
+        <div class="proj-footer">
+          <a href="https://github.com/mayur0522" target="_blank" class="proj-link">$ open repository →</a>
+          <span class="proj-highlight">🛡️ Enterprise Disaster Recovery &amp; IaC Resilience</span>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -274,100 +361,85 @@
     <h2 class="section-heading fade-up">Key <span class="accent">Achievements</span></h2>
     <p class="section-sub fade-up">Technical accomplishments and quantifiable business impact engineered in the Kube-vLLM-Ops platform.</p>
 
-    <div class="timeline">
-      <div class="tl-item fade-up">
-        <div class="tl-left">
-          <div class="tl-date">Cost Optimization</div>
-          <div class="tl-dot-wrap"><div class="tl-dot active"></div></div>
+    <div class="achievements-grid">
+      <div class="achievement-card fade-up">
+        <div class="ac-header">
+          <span class="ac-date">Cost Optimization</span>
+          <span class="ac-company">Kube-vLLM-Ops Platform</span>
         </div>
-        <div class="tl-right">
-          <div class="tl-company">Kube-vLLM-Ops Platform</div>
-          <div class="tl-role">Scale-to-Zero Serverless GPU Autoscaling</div>
-          <div class="tl-stack">
-            <span>KServe</span><span>Knative Serving</span><span>Istio Ingress</span><span>AWS Spot Instance Groups</span>
-          </div>
-          <ul class="tl-bullets">
-            <li>Orchestrated Knative serving to monitor real-time request concurrency, automatically scaling down expensive GPU node groups when inactive to **drive idle AWS instance billing to $0/hr**</li>
-            <li>Designed a custom request buffering queue inside Knative to gracefully suspend incoming user requests during cold starts, safely scaling from 0 to N instances on demand</li>
-            <li>Integrated Istio Service Mesh to enforce robust model ingress routing and traffic splitting across multiple served model versions</li>
-          </ul>
+        <h3 class="ac-role">Scale-to-Zero Serverless GPU Autoscaling</h3>
+        <div class="ac-stack">
+          <span>KServe</span><span>Knative Serving</span><span>Istio Ingress</span><span>AWS Spot Groups</span>
         </div>
+        <ul class="ac-bullets">
+          <li>Orchestrated Knative serving to monitor request concurrency, scaling down Spot GPU node groups to **drive idle billing to $0/hr**</li>
+          <li>Designed a custom request buffering queue inside Knative to gracefully suspend incoming user requests during GPU cold starts</li>
+          <li>Integrated Istio Service Mesh to enforce robust model ingress routing and traffic splitting across served model versions</li>
+        </ul>
       </div>
 
-      <div class="tl-item fade-up" style="transition-delay:0.05s">
-        <div class="tl-left">
-          <div class="tl-date">Performance Engineering</div>
-          <div class="tl-dot-wrap"><div class="tl-dot"></div></div>
+      <div class="achievement-card fade-up" style="transition-delay:0.05s">
+        <div class="ac-header">
+          <span class="ac-date">Performance Engineering</span>
+          <span class="ac-company">Inference Engine Integration</span>
         </div>
-        <div class="tl-right">
-          <div class="tl-company">Inference Engine Integration</div>
-          <div class="tl-role">High-Throughput VRAM &amp; serving Optimization</div>
-          <div class="tl-stack">
-            <span>vLLM Engine</span><span>PagedAttention</span><span>Tensor Parallelism</span><span>NVIDIA T4 GPUs</span>
-          </div>
-          <ul class="tl-bullets">
-            <li>Deployed the high-speed vLLM serving container to execute PagedAttention, eliminating internal KV cache fragmentation and **reducing VRAM footprint by 40%**</li>
-            <li>Configured Continuous Batching to dynamic-pack incoming queries on the fly, sustaining double the throughput of classic static-batching setups</li>
-            <li>Structured multi-GPU Tensor Parallelism to slice weights across hardware, maximizing throughput for large models like Mistral 7B</li>
-          </ul>
+        <h3 class="ac-role">High-Throughput VRAM &amp; serving Optimization</h3>
+        <div class="ac-stack">
+          <span>vLLM Engine</span><span>PagedAttention</span><span>Tensor Parallelism</span><span>NVIDIA GPUs</span>
         </div>
+        <ul class="ac-bullets">
+          <li>Deployed high-speed vLLM container executing PagedAttention, **reducing VRAM footprint by 40%**</li>
+          <li>Configured Continuous Batching to dynamically pack queries on the fly, doubling throughput compared to staticbatching</li>
+          <li>Structured multi-GPU Tensor Parallelism to slice weights across hardware, maximizing large model throughput</li>
+        </ul>
       </div>
 
-      <div class="tl-item fade-up" style="transition-delay:0.1s">
-        <div class="tl-left">
-          <div class="tl-date">GitOps &amp; IaC Automation</div>
-          <div class="tl-dot-wrap"><div class="tl-dot"></div></div>
+      <div class="achievement-card fade-up" style="transition-delay:0.1s">
+        <div class="ac-header">
+          <span class="ac-date">GitOps &amp; IaC Automation</span>
+          <span class="ac-company">Infrastructure as Code System</span>
         </div>
-        <div class="tl-right">
-          <div class="tl-company">Infrastructure as Code System</div>
-          <div class="tl-role">EKS &amp; Pipeline GitOps Provisioning</div>
-          <div class="tl-stack">
-            <span>Terraform Modular IaC</span><span>ArgoCD GitOps</span><span>GitHub Actions</span><span>AWS S3 Backend Locks</span>
-          </div>
-          <ul class="tl-bullets">
-            <li>Wrote clean, modular Terraform files to provision private/public VPC network setups, OIDC service accounts, system node groups (`t3.medium`), and Spot GPU node groups (`g4dn.xlarge`)</li>
-            <li>Configured secure AWS S3 backend state tracking with native DynamoDB-based lock operations to prevent state collisions and ensure single-source-of-truth</li>
-            <li>Built an end-to-end GitOps deployment workflow using ArgoCD and GitHub Actions, automatically syncing new cluster manifest updates on git push</li>
-          </ul>
+        <h3 class="ac-role">EKS &amp; Pipeline GitOps Provisioning</h3>
+        <div class="ac-stack">
+          <span>Terraform Modular IaC</span><span>ArgoCD GitOps</span><span>GitHub Actions</span><span>S3 Backend Locks</span>
         </div>
+        <ul class="ac-bullets">
+          <li>Wrote modular Terraform to provision private VPC setups, OIDC service accounts, and Spot GPU node groups</li>
+          <li>Configured secure AWS S3 backend state tracking with native DynamoDB-based lock operations to prevent collisions</li>
+          <li>Built GitOps deployment workflows using ArgoCD and GH Actions to auto-sync cluster updates on git push</li>
+        </ul>
       </div>
 
-      <div class="tl-item fade-up" style="transition-delay:0.15s">
-        <div class="tl-left">
-          <div class="tl-date">ML Data Lifecycle</div>
-          <div class="tl-dot-wrap"><div class="tl-dot"></div></div>
+      <div class="achievement-card fade-up" style="transition-delay:0.15s">
+        <div class="ac-header">
+          <span class="ac-date">ML Data Lifecycle</span>
+          <span class="ac-company">Model Versioning Pipeline</span>
         </div>
-        <div class="tl-right">
-          <div class="tl-company">Model Versioning Pipeline</div>
-          <div class="tl-role">Git-Tracked Weight Storage decoupling</div>
-          <div class="tl-stack">
-            <span>DVC (Data Version Control)</span><span>AWS S3 DVC Store</span><span>GitHub Actions CD</span>
-          </div>
-          <ul class="tl-bullets">
-            <li>Engineered an elegant MLOps lifecycle pipeline using DVC to track heavy 14GB model weights in secure AWS S3 remote stores, utilizing lightweight MD5 pointers in Git</li>
-            <li>Decoupled heavy model weight files from code checkouts, protecting git repository from structural bloating and ensuring 100% reproducible model environments</li>
-            <li>Automated data-pulling workflows in GitHub Actions CD pipelines by running `dvc pull` on commits before rolling out updated KServe manifests</li>
-          </ul>
+        <h3 class="ac-role">Git-Tracked Weight Storage decoupling</h3>
+        <div class="ac-stack">
+          <span>DVC (Data Version)</span><span>AWS S3 DVC Store</span><span>GitHub Actions CD</span>
         </div>
+        <ul class="ac-bullets">
+          <li>Engineered MLOps pipeline using DVC to track heavy 14GB weights in secure AWS S3 via lightweight MD5 pointers</li>
+          <li>Decoupled heavy weight files from code checkouts, protecting git repository from structural bloating</li>
+          <li>Automated data-pulling workflows in GH Actions by running `dvc pull` on commits before rolling out serving updates</li>
+        </ul>
       </div>
 
-      <div class="tl-item fade-up" style="transition-delay:0.2s">
-        <div class="tl-left">
-          <div class="tl-date">Telemetry &amp; Observability</div>
-          <div class="tl-dot-wrap"><div class="tl-dot"></div></div>
+      <div class="achievement-card fade-up" style="transition-delay:0.2s">
+        <div class="ac-header">
+          <span class="ac-date">Telemetry &amp; Observability</span>
+          <span class="ac-company">Inference Metrics &amp; Monitoring</span>
         </div>
-        <div class="tl-right">
-          <div class="tl-company">Inference Metrics &amp; Health Monitoring</div>
-          <div class="tl-role">Full-Stack Engine &amp; GPU Telemetry</div>
-          <div class="tl-stack">
-            <span>DCGM Exporter DaemonSet</span><span>Prometheus Exporters</span><span>Prometheus Custom Adapter</span><span>Grafana Boards</span>
-          </div>
-          <ul class="tl-bullets">
-            <li>Deployed DCGM Exporter DaemonSets to scrape low-level NVIDIA GPU parameters, monitoring physical VRAM allocation, temperatures, and hardware utilization</li>
-            <li>Configured custom Prometheus adapters to feed high-level engine telemetry (`num_requests_running`, tokens/sec) directly into Kubernetes autoscaling APIs</li>
-            <li>Designed unified dashboards in Grafana to visualize hardware telemetry and engine throughput, **decreasing platform incident response time (MTTR) by 30%**</li>
-          </ul>
+        <h3 class="ac-role">Full-Stack Engine &amp; GPU Telemetry</h3>
+        <div class="ac-stack">
+          <span>DCGM Exporter</span><span>Prometheus Exporters</span><span>Prometheus Adapter</span><span>Grafana Boards</span>
         </div>
+        <ul class="ac-bullets">
+          <li>Deployed DCGM Exporter DaemonSets to scrape low-level NVIDIA GPU parameters (VRAM allocation, temps, load)</li>
+          <li>Configured custom Prometheus adapters to feed high-level engine metrics directly into Kubernetes scaling APIs</li>
+          <li>Designed unified Grafana dashboards to visualize hardware and engine telemetry, **reducing MTTR by 30%**</li>
+        </ul>
       </div>
     </div>
 
