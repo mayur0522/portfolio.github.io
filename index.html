@@ -4,20 +4,17 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mayur Bhosale | DevOps & Cloud Engineer</title>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;0,800;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700;800&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-<!-- AMBIENT PARTICLES -->
 <canvas id="canvas"></canvas>
 
 <!-- NAV -->
 <nav id="nav">
   <div class="nav-logo">
-    <div class="status-ring">
-      <div class="status-dot"></div>
-    </div>
+    <div class="status-ring"><div class="status-dot"></div></div>
     <span class="logo-text">mayur<span class="logo-accent">@devops</span><span class="logo-muted">:~$</span></span>
   </div>
   <div class="nav-links">
@@ -35,7 +32,8 @@
 <!-- HERO -->
 <section id="about">
   <div class="hero-container">
-    <!-- Left: Terminal -->
+
+    <!-- LEFT: terminal -->
     <div class="hero-terminal fade-up">
       <div class="term-header">
         <div class="dots">
@@ -57,7 +55,7 @@
         <div class="t-line t-out">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"GCP Associate Cloud Engineer"</span></div>
         <div class="t-line t-out">&nbsp;&nbsp;],</div>
         <div class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"location"</span>: <span class="t-str">"Pune, India 🇮🇳"</span>,</div>
-        <div class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"status"</span>: <span class="t-green">"open_to_opportunities"</span>,</div>
+        <div class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"status"</span>: <span class="t-red">"open_to_opportunities"</span>,</div>
         <div class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"focus"</span>: [</div>
         <div class="t-line t-out">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"CI/CD Pipelines"</span>,</div>
         <div class="t-line t-out">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"Kubernetes &amp; Cloud Infra"</span>,</div>
@@ -71,29 +69,22 @@
       </div>
     </div>
 
-    <!-- Right: Hero text -->
-    <div class="hero-text fade-up" style="animation-delay:0.15s">
+    <!-- RIGHT: hero text -->
+    <div class="hero-text fade-up" style="transition-delay:0.15s">
       <div class="hero-badge">
         <span class="badge-dot"></span>Available for DevOps · SRE · Cloud Roles
       </div>
       <h1 class="hero-heading">
-        Mayur<br>
-        <span class="heading-accent">Bhosale</span>
+        Mayur<br><span class="accent">Bhosale</span>
       </h1>
       <p class="hero-role">DevOps Engineer <span class="role-sep">//</span> Cloud Architect</p>
       <p class="hero-bio">
-        2 years building production-grade CI/CD pipelines, Kubernetes platforms, and cloud infrastructure on AWS &amp; GCP. 
+        2 years building production-grade CI/CD pipelines, Kubernetes platforms, and cloud infrastructure on AWS &amp; GCP.
         Certified AWS SA &amp; GCP ACE. Passionate about DevSecOps, GitOps, and GPU inference serving.
       </p>
       <div class="cert-row">
-        <div class="cert-badge">
-          <span class="cert-icon">☁️</span>
-          <span>AWS SA Associate</span>
-        </div>
-        <div class="cert-badge">
-          <span class="cert-icon">☁️</span>
-          <span>GCP Cloud Engineer</span>
-        </div>
+        <div class="cert-pill">☁️ AWS SA Associate</div>
+        <div class="cert-pill">🌐 GCP Cloud Engineer</div>
       </div>
       <div class="hero-actions">
         <a href="#projects" class="btn btn-primary">$ ls ./projects</a>
@@ -110,7 +101,7 @@
     <div class="section-label fade-up">// skills</div>
     <h2 class="section-heading fade-up">The <span class="accent">stack</span></h2>
 
-    <!-- Pipeline viz -->
+    <!-- Pipeline -->
     <div class="pipeline-wrap fade-up">
       <div class="pipeline">
         <div class="pipe-stage">
@@ -175,67 +166,46 @@
       </div>
     </div>
 
-    <!-- Skill grid -->
+    <!-- Skill cards -->
     <div class="skill-grid">
       <div class="skill-card fade-up">
-        <div class="skill-card-header">
-          <span class="sk-icon">☁️</span>
-          <span class="sk-title">Cloud Platforms</span>
-        </div>
+        <div class="skill-card-header"><span class="sk-icon">☁️</span><span class="sk-title">Cloud Platforms</span></div>
         <div class="sk-tags">
           <span>AWS EC2/EKS/S3</span><span>RDS · Lambda</span><span>IAM · VPC</span>
-          <span>Route 53 · SNS</span><span>GCP Compute</span><span>GKE · BigQuery</span>
-          <span>Cloud Functions</span>
+          <span>Route 53 · SNS</span><span>GCP Compute</span><span>GKE · BigQuery</span><span>Cloud Functions</span>
         </div>
       </div>
-      <div class="skill-card fade-up" style="animation-delay:0.05s">
-        <div class="skill-card-header">
-          <span class="sk-icon">📦</span>
-          <span class="sk-title">Containers & Orchestration</span>
-        </div>
+      <div class="skill-card fade-up" style="transition-delay:0.05s">
+        <div class="skill-card-header"><span class="sk-icon">📦</span><span class="sk-title">Containers &amp; Orchestration</span></div>
         <div class="sk-tags">
           <span>Docker</span><span>Kubernetes</span><span>Helm</span>
           <span>ArgoCD</span><span>Kustomize</span><span>Istio</span><span>EKS · GKE · AKS</span>
         </div>
       </div>
-      <div class="skill-card fade-up" style="animation-delay:0.1s">
-        <div class="skill-card-header">
-          <span class="sk-icon">🔧</span>
-          <span class="sk-title">Infrastructure as Code</span>
-        </div>
+      <div class="skill-card fade-up" style="transition-delay:0.1s">
+        <div class="skill-card-header"><span class="sk-icon">🔧</span><span class="sk-title">Infrastructure as Code</span></div>
         <div class="sk-tags">
-          <span>Terraform</span><span>Ansible</span><span>CloudFormation</span>
-          <span>Pulumi</span><span>Vault</span>
+          <span>Terraform</span><span>Ansible</span><span>CloudFormation</span><span>Pulumi</span><span>Vault</span>
         </div>
       </div>
-      <div class="skill-card fade-up" style="animation-delay:0.15s">
-        <div class="skill-card-header">
-          <span class="sk-icon">🔐</span>
-          <span class="sk-title">DevSecOps</span>
-        </div>
+      <div class="skill-card fade-up" style="transition-delay:0.15s">
+        <div class="skill-card-header"><span class="sk-icon">🔐</span><span class="sk-title">DevSecOps</span></div>
         <div class="sk-tags">
           <span>SonarQube</span><span>Trivy</span><span>OWASP ZAP</span>
           <span>HashiCorp Vault</span><span>Open Telemetry</span><span>OpenObserve</span>
         </div>
       </div>
-      <div class="skill-card fade-up" style="animation-delay:0.2s">
-        <div class="skill-card-header">
-          <span class="sk-icon">📈</span>
-          <span class="sk-title">Monitoring & Observability</span>
-        </div>
+      <div class="skill-card fade-up" style="transition-delay:0.2s">
+        <div class="skill-card-header"><span class="sk-icon">📈</span><span class="sk-title">Monitoring &amp; Observability</span></div>
         <div class="sk-tags">
           <span>Prometheus</span><span>Grafana</span><span>ELK Stack</span>
           <span>CloudWatch</span><span>Azure Monitor</span><span>Log Analytics</span>
         </div>
       </div>
-      <div class="skill-card fade-up" style="animation-delay:0.25s">
-        <div class="skill-card-header">
-          <span class="sk-icon">💻</span>
-          <span class="sk-title">Scripting & Automation</span>
-        </div>
+      <div class="skill-card fade-up" style="transition-delay:0.25s">
+        <div class="skill-card-header"><span class="sk-icon">💻</span><span class="sk-title">Scripting &amp; Automation</span></div>
         <div class="sk-tags">
-          <span>Bash · Shell</span><span>Python</span><span>YAML</span>
-          <span>Cron Jobs</span><span>Linux (RHEL/CentOS)</span>
+          <span>Bash · Shell</span><span>Python</span><span>YAML</span><span>Cron Jobs</span><span>Linux (RHEL/CentOS)</span>
         </div>
       </div>
     </div>
@@ -247,13 +217,13 @@
   <div class="section-wrap">
     <div class="section-label fade-up">// projects</div>
     <h2 class="section-heading fade-up">Personal <span class="accent">projects</span></h2>
-    <p class="section-sub fade-up">Production-grade DevOps implementations & real-world infrastructure solutions.</p>
+    <p class="section-sub fade-up">Production-grade DevOps implementations &amp; real-world infrastructure solutions.</p>
 
     <div class="project-grid">
 
-      <!-- Project 1: LLM Deployment — FEATURED -->
+      <!-- FEATURED: LLM Deployment -->
       <div class="project-card featured fade-up">
-        <div class="proj-top">
+        <div class="proj-topbar">
           <div class="proj-number">P-04</div>
           <div class="proj-score">
             <span class="score-label">Score</span>
@@ -261,7 +231,7 @@
             <span class="score-stars">⭐⭐⭐⭐</span>
           </div>
         </div>
-        <div class="proj-tag-row">
+        <div class="proj-tags">
           <span class="proj-tag tag-ai">AI/ML</span>
           <span class="proj-tag tag-k8s">Kubernetes</span>
           <span class="proj-tag tag-gpu">GPU</span>
@@ -269,9 +239,9 @@
         <h3 class="proj-title">LLM Deployment on Kubernetes</h3>
         <p class="proj-subtitle">vLLM · PagedAttention · Tensor Parallelism</p>
         <p class="proj-desc">
-          High-performance GPU LLM inference with vLLM on Kubernetes. 
-          Implements PagedAttention, continuous batching, and tensor parallelism for 
-          state-of-the-art serving efficiency. GPU scheduling via NVIDIA device plugin, 
+          High-performance GPU LLM inference with vLLM on Kubernetes.
+          Implements PagedAttention, continuous batching, and tensor parallelism for
+          state-of-the-art serving efficiency. GPU scheduling via NVIDIA device plugin,
           containerized HuggingFace model deployment at production scale.
         </p>
         <div class="proj-metrics">
@@ -302,24 +272,24 @@
         </div>
         <div class="proj-footer">
           <a href="https://github.com/mayur0522" target="_blank" class="proj-link">$ open repo →</a>
-          <span class="proj-highlight">🏆 Niche GPU expertise — top-tier 2025/2026 skill</span>
+          <span class="proj-highlight">🏆 Niche GPU expertise · top-tier 2025/2026 skill</span>
         </div>
       </div>
 
-      <!-- Project 2: E-Commerce CI/CD -->
-      <div class="project-card fade-up" style="animation-delay:0.1s">
-        <div class="proj-top">
+      <!-- P-01 -->
+      <div class="project-card fade-up" style="transition-delay:0.05s">
+        <div class="proj-topbar">
           <div class="proj-number">P-01</div>
         </div>
-        <div class="proj-tag-row">
+        <div class="proj-tags">
           <span class="proj-tag tag-k8s">Kubernetes</span>
           <span class="proj-tag tag-cicd">CI/CD</span>
         </div>
         <h3 class="proj-title">E-Commerce Platform Modernization</h3>
         <p class="proj-subtitle">EKS · Helm · Argo-CD · GitHub Actions</p>
         <p class="proj-desc">
-          Full microservices modernization on AWS EKS with Istio service mesh, 
-          automated GitOps via Argo-CD, and Vault-based secrets management. 
+          Full microservices modernization on AWS EKS with Istio service mesh,
+          automated GitOps via Argo-CD, and Vault-based secrets management.
           Achieved 98% deployment success rate and 30% reduction in incident response time.
         </p>
         <div class="proj-stack">
@@ -331,46 +301,45 @@
         </div>
       </div>
 
-      <!-- Project 3: Terraform IaC -->
-      <div class="project-card fade-up" style="animation-delay:0.15s">
-        <div class="proj-top">
+      <!-- P-02 -->
+      <div class="project-card fade-up" style="transition-delay:0.1s">
+        <div class="proj-topbar">
           <div class="proj-number">P-02</div>
         </div>
-        <div class="proj-tag-row">
+        <div class="proj-tags">
           <span class="proj-tag tag-iac">IaC</span>
           <span class="proj-tag tag-aws">AWS</span>
         </div>
         <h3 class="proj-title">Cloud Infrastructure Automation</h3>
         <p class="proj-subtitle">Terraform · AWS · Ansible</p>
         <p class="proj-desc">
-          End-to-end infrastructure provisioning with Terraform modules for VPC, EKS, 
-          RDS, and IAM. Ansible playbooks for server configuration and patching. 
+          End-to-end infrastructure provisioning with Terraform modules for VPC, EKS,
+          RDS, and IAM. Ansible playbooks for server config and patching.
           Saved 400+ man-hours annually through automation.
         </p>
         <div class="proj-stack">
-          <span>Terraform</span><span>Ansible</span><span>AWS VPC</span>
-          <span>IAM</span><span>Bash</span>
+          <span>Terraform</span><span>Ansible</span><span>AWS VPC</span><span>IAM</span><span>Bash</span>
         </div>
         <div class="proj-footer">
           <a href="https://github.com/mayur0522" target="_blank" class="proj-link">$ open repo →</a>
         </div>
       </div>
 
-      <!-- Project 4: Monitoring Stack -->
-      <div class="project-card fade-up" style="animation-delay:0.2s">
-        <div class="proj-top">
+      <!-- P-03 -->
+      <div class="project-card fade-up" style="transition-delay:0.15s">
+        <div class="proj-topbar">
           <div class="proj-number">P-03</div>
         </div>
-        <div class="proj-tag-row">
+        <div class="proj-tags">
           <span class="proj-tag tag-monitor">Monitoring</span>
           <span class="proj-tag tag-devsec">DevSecOps</span>
         </div>
-        <h3 class="proj-title">Observability & Security Platform</h3>
+        <h3 class="proj-title">Observability &amp; Security Platform</h3>
         <p class="proj-subtitle">Prometheus · Grafana · OpenTelemetry</p>
         <p class="proj-desc">
-          Full-stack observability with Prometheus, Grafana dashboards, and OpenTelemetry 
-          tracing. Integrated DevSecOps pipeline with SonarQube, Trivy container scanning, 
-          and OWASP ZAP. Reduced MTTR by 40%.
+          Full-stack observability with Prometheus, Grafana dashboards, and OpenTelemetry tracing.
+          Integrated DevSecOps pipeline with SonarQube, Trivy container scanning, and OWASP ZAP.
+          Reduced MTTR by 40%.
         </p>
         <div class="proj-stack">
           <span>Prometheus</span><span>Grafana</span><span>OpenTelemetry</span>
@@ -395,9 +364,7 @@
       <div class="tl-item fade-up">
         <div class="tl-left">
           <div class="tl-date">Dec 2025 – Present</div>
-          <div class="tl-line">
-            <div class="tl-dot active"></div>
-          </div>
+          <div class="tl-dot-wrap"><div class="tl-dot active"></div></div>
         </div>
         <div class="tl-right">
           <div class="tl-company">Instrim Labs LLP, Pune</div>
@@ -407,31 +374,28 @@
             <span>GitHub Actions</span><span>ArgoCD</span><span>Vault</span>
           </div>
           <ul class="tl-bullets">
-            <li>Administered and troubleshot Kubernetes (EKS) clusters with Helm chart deployments and zero-downtime node upgrades</li>
+            <li>Administered Kubernetes (EKS) clusters with Helm chart deployments and zero-downtime node upgrades</li>
             <li>Built YAML-based reusable pipeline templates — <strong>25% increase in pipeline efficiency</strong></li>
             <li>Provisioned scalable infrastructure with Terraform — <strong>98% deployment success rate</strong></li>
             <li>Designed monitoring/alerting stack — <strong>30% reduction in incident response time</strong></li>
-            <li>Drove <strong>10% cost reduction</strong> via Amazon Cost Management; saved <strong>400+ man-hours/year</strong> via automation</li>
+            <li>Drove <strong>10% cost reduction</strong> via Amazon Cost Management; saved <strong>400+ man-hours/year</strong></li>
           </ul>
         </div>
       </div>
 
-      <div class="tl-item fade-up" style="animation-delay:0.1s">
+      <div class="tl-item fade-up" style="transition-delay:0.1s">
         <div class="tl-left">
           <div class="tl-date">Feb – Jul 2024</div>
-          <div class="tl-line">
-            <div class="tl-dot"></div>
-          </div>
+          <div class="tl-dot-wrap"><div class="tl-dot"></div></div>
         </div>
         <div class="tl-right">
           <div class="tl-company">Randstad → Varian (Siemens Healthineers)</div>
           <div class="tl-role">System Administrator / Cloud Engineer</div>
           <div class="tl-stack">
-            <span>GCP</span><span>Linux</span><span>Python</span>
-            <span>Bash</span><span>RPM/YUM</span>
+            <span>GCP</span><span>Linux</span><span>Python</span><span>Bash</span><span>RPM/YUM</span>
           </div>
           <ul class="tl-bullets">
-            <li>Provided L1/L2 support for GCP environments, ensuring high availability of critical clinical workloads</li>
+            <li>Provided L1/L2 support for GCP environments ensuring high availability of critical clinical workloads</li>
             <li>Automated package installation, patching, and configuration via RPM, YUM, and APT</li>
             <li>Designed automation workflows reducing manual effort in system configuration tasks</li>
             <li>Managed user access, service configs, and system health across Linux environments</li>
@@ -440,7 +404,7 @@
       </div>
     </div>
 
-    <!-- Education & Certs -->
+    <!-- Edu + Certs -->
     <div class="edu-cert-row">
       <div class="edu-block fade-up">
         <div class="block-label">// education</div>
@@ -456,7 +420,7 @@
         </div>
       </div>
 
-      <div class="cert-block fade-up" style="animation-delay:0.1s">
+      <div class="cert-block fade-up" style="transition-delay:0.1s">
         <div class="block-label">// certifications</div>
         <div class="cert-item">
           <div class="cert-badge-big">
@@ -501,36 +465,32 @@
           </p>
           <div class="contact-links">
             <a href="mailto:mayurbhosalen9@gmail.com" class="contact-link">
-              <span class="cl-icon">✉</span>
-              <span>mayurbhosalen9@gmail.com</span>
-              <span class="cl-arrow">→</span>
+              <span class="cl-icon">✉</span><span>mayurbhosalen9@gmail.com</span><span class="cl-arrow">→</span>
             </a>
             <a href="https://www.linkedin.com/in/mayurbhosale2299/" target="_blank" class="contact-link">
-              <span class="cl-icon">⬡</span>
-              <span>linkedin.com/in/mayurbhosale2299</span>
-              <span class="cl-arrow">→</span>
+              <span class="cl-icon">⬡</span><span>linkedin.com/in/mayurbhosale2299</span><span class="cl-arrow">→</span>
             </a>
             <a href="https://github.com/mayur0522" target="_blank" class="contact-link">
-              <span class="cl-icon">⌥</span>
-              <span>github.com/mayur0522</span>
-              <span class="cl-arrow">→</span>
+              <span class="cl-icon">⌥</span><span>github.com/mayur0522</span><span class="cl-arrow">→</span>
             </a>
             <a href="tel:+917066117676" class="contact-link">
-              <span class="cl-icon">☎</span>
-              <span>+91 7066 117 676</span>
-              <span class="cl-arrow">→</span>
+              <span class="cl-icon">☎</span><span>+91 7066 117 676</span><span class="cl-arrow">→</span>
             </a>
           </div>
         </div>
         <div class="contact-right">
           <div class="contact-terminal">
             <div class="ct-header">
-              <div class="dots"><span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span></div>
+              <div class="dots">
+                <span class="dot dot-r"></span>
+                <span class="dot dot-y"></span>
+                <span class="dot dot-g"></span>
+              </div>
               <span>availability.sh</span>
             </div>
             <div class="ct-body">
               <div class="t-line"><span class="t-prompt">$ </span><span class="t-cmd">./check_availability.sh</span></div>
-              <div class="t-line t-out" style="color:#4ade80">✓ Status: AVAILABLE</div>
+              <div class="t-line t-out t-red">✓ Status: AVAILABLE</div>
               <div class="t-line t-out">✓ Roles: DevOps / SRE / Cloud</div>
               <div class="t-line t-out">✓ Location: Pune, India</div>
               <div class="t-line t-out">✓ Remote: YES</div>
@@ -555,10 +515,11 @@
 </footer>
 
 <script>
-// Canvas particles
+/* ── CANVAS PARTICLES ── */
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
-let W, H, particles = [];
+let W, H;
+const particles = [];
 
 function resize() {
   W = canvas.width  = window.innerWidth;
@@ -567,80 +528,74 @@ function resize() {
 resize();
 window.addEventListener('resize', resize);
 
-for (let i = 0; i < 55; i++) {
+for (let i = 0; i < 60; i++) {
   particles.push({
-    x: Math.random() * window.innerWidth,
-    y: Math.random() * window.innerHeight,
-    vx: (Math.random() - 0.5) * 0.18,
-    vy: (Math.random() - 0.5) * 0.18,
-    r: Math.random() * 1.5 + 0.3,
-    a: Math.random() * 0.4 + 0.1
+    x:  Math.random() * window.innerWidth,
+    y:  Math.random() * window.innerHeight,
+    vx: (Math.random() - 0.5) * 0.2,
+    vy: (Math.random() - 0.5) * 0.2,
+    r:  Math.random() * 1.4 + 0.3,
+    a:  Math.random() * 0.35 + 0.08
   });
 }
 
-function drawParticles() {
+function draw() {
   ctx.clearRect(0, 0, W, H);
   particles.forEach(p => {
     p.x += p.vx; p.y += p.vy;
-    if (p.x < 0) p.x = W;
-    if (p.x > W) p.x = 0;
-    if (p.y < 0) p.y = H;
-    if (p.y > H) p.y = 0;
+    if (p.x < 0) p.x = W; if (p.x > W) p.x = 0;
+    if (p.y < 0) p.y = H; if (p.y > H) p.y = 0;
     ctx.beginPath();
     ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-    ctx.fillStyle = `rgba(74, 222, 128, ${p.a})`;
+    ctx.fillStyle = `rgba(255,45,45,${p.a})`;
     ctx.fill();
   });
-  // Draw connections
   for (let i = 0; i < particles.length; i++) {
     for (let j = i + 1; j < particles.length; j++) {
       const dx = particles[i].x - particles[j].x;
       const dy = particles[i].y - particles[j].y;
-      const dist = Math.sqrt(dx*dx + dy*dy);
-      if (dist < 110) {
+      const d  = Math.sqrt(dx*dx + dy*dy);
+      if (d < 120) {
         ctx.beginPath();
-        ctx.strokeStyle = `rgba(74, 222, 128, ${0.06 * (1 - dist/110)})`;
-        ctx.lineWidth = 0.5;
+        ctx.strokeStyle = `rgba(255,45,45,${0.07*(1-d/120)})`;
+        ctx.lineWidth = 0.6;
         ctx.moveTo(particles[i].x, particles[i].y);
         ctx.lineTo(particles[j].x, particles[j].y);
         ctx.stroke();
       }
     }
   }
-  requestAnimationFrame(drawParticles);
+  requestAnimationFrame(draw);
 }
-drawParticles();
+draw();
 
-// Scroll nav
+/* ── NAV SCROLL ── */
 window.addEventListener('scroll', () => {
   document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 50);
 });
 
-// Intersection observer for fade-up
+/* ── FADE-UP ── */
 const io = new IntersectionObserver(
   entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
   { threshold: 0.07 }
 );
 document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
 
-// Metric bar animation — trigger widths when featured card enters view
-const metricObs = new IntersectionObserver(entries => {
+/* ── METRIC BARS ── */
+const mObs = new IntersectionObserver(entries => {
   entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.querySelectorAll('.metric-fill').forEach(bar => {
-        const target = bar.style.width;
-        bar.style.width = '0';
-        requestAnimationFrame(() => {
-          requestAnimationFrame(() => {
-            bar.style.transition = 'width 1.2s cubic-bezier(0.4,0,0.2,1)';
-            bar.style.width = target;
-          });
-        });
-      });
-    }
+    if (!e.isIntersecting) return;
+    e.target.querySelectorAll('.metric-fill').forEach(bar => {
+      const w = bar.style.width;
+      bar.style.width = '0';
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        bar.style.transition = 'width 1.2s cubic-bezier(0.4,0,0.2,1)';
+        bar.style.width = w;
+      }));
+    });
   });
 }, { threshold: 0.2 });
-document.querySelectorAll('.project-card.featured').forEach(c => metricObs.observe(c));
+document.querySelectorAll('.project-card.featured').forEach(c => mObs.observe(c));
 </script>
 </body>
 </html>
