@@ -3,169 +3,239 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mayur | DevOps Engineer</title>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700;800&display=swap" rel="stylesheet"/>
+  <title>Mayur Bhosale | DevOps & Cloud Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;0,800;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
+<!-- AMBIENT PARTICLES -->
+<canvas id="canvas"></canvas>
+
 <!-- NAV -->
-<nav>
-  <div class="nav-logo"><div class="blink"></div>mayur@devops:~$</div>
+<nav id="nav">
+  <div class="nav-logo">
+    <div class="status-ring">
+      <div class="status-dot"></div>
+    </div>
+    <span class="logo-text">mayur<span class="logo-accent">@devops</span><span class="logo-muted">:~$</span></span>
+  </div>
   <div class="nav-links">
-    <a href="#skills">./skills</a>
-    <a href="#projects">./projects</a>
-    <a href="#exp">./experience</a>
-    <a href="#contact">./contact</a>
-    <a href="https://github.com/mayur0522" target="_blank">github ↗</a>
+    <a href="#about">about</a>
+    <a href="#skills">skills</a>
+    <a href="#projects">projects</a>
+    <a href="#experience">experience</a>
+    <a href="#contact">contact</a>
+  </div>
+  <div class="nav-cta">
+    <span class="hire-badge">⚡ Open to Work</span>
   </div>
 </nav>
 
 <!-- HERO -->
-<section id="hero">
-  <div class="term-win fu">
-    <div class="term-bar">
-      <div class="td r"></div>
-      <div class="td a"></div>
-      <div class="td g"></div>
-      <div class="tb-title">mayur@devops — bash — 80×24</div>
-    </div>
-    <div class="term-body">
-      <div class="tl"><span class="tu">mayur</span><span class="tp">@</span><span class="tpath">devops</span><span class="tp">:~$ </span><span class="tc">whoami --verbose</span></div>
-      <div class="tl to">name:&nbsp;<span class="hi" id="tname">Mayur</span></div>
-      <div class="tl to">role:&nbsp;<span class="kw">DevOps Engineer</span></div>
-      <div class="tl to">focus:&nbsp;<span class="val">CI/CD · Cloud Infra · Containers · IaC</span></div>
-      <div class="tl to">bio:&nbsp;<span class="hi" id="tbio">Building resilient systems and automating everything possible.</span></div>
-      <div class="tl to">location:&nbsp;<span class="val">India 🇮🇳</span></div>
-      <div class="tl to">status:&nbsp;<span class="hi">open_to_opportunities ✓</span></div>
-      <div class="tl" style="margin-top:8px">
-        <span class="tu">mayur</span><span class="tp">@</span><span class="tpath">devops</span><span class="tp">:~$ </span><span class="curs"></span>
+<section id="about">
+  <div class="hero-container">
+    <!-- Left: Terminal -->
+    <div class="hero-terminal fade-up">
+      <div class="term-header">
+        <div class="dots">
+          <span class="dot dot-r"></span>
+          <span class="dot dot-y"></span>
+          <span class="dot dot-g"></span>
+        </div>
+        <span class="term-title">mayur@devops — zsh — 120×40</span>
+        <span class="term-icon">⌘</span>
+      </div>
+      <div class="term-body">
+        <div class="t-line"><span class="t-prompt">$ </span><span class="t-cmd">cat profile.json</span></div>
+        <div class="t-line t-out">{</div>
+        <div class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"name"</span>: <span class="t-str">"Mayur Bhosale"</span>,</div>
+        <div class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"role"</span>: <span class="t-str">"DevOps &amp; Cloud Engineer"</span>,</div>
+        <div class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"experience"</span>: <span class="t-num">2</span>,</div>
+        <div class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"certs"</span>: [</div>
+        <div class="t-line t-out">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"AWS Solutions Architect Associate"</span>,</div>
+        <div class="t-line t-out">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"GCP Associate Cloud Engineer"</span></div>
+        <div class="t-line t-out">&nbsp;&nbsp;],</div>
+        <div class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"location"</span>: <span class="t-str">"Pune, India 🇮🇳"</span>,</div>
+        <div class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"status"</span>: <span class="t-green">"open_to_opportunities"</span>,</div>
+        <div class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"focus"</span>: [</div>
+        <div class="t-line t-out">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"CI/CD Pipelines"</span>,</div>
+        <div class="t-line t-out">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"Kubernetes &amp; Cloud Infra"</span>,</div>
+        <div class="t-line t-out">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"DevSecOps"</span>,</div>
+        <div class="t-line t-out">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"LLM Inference Serving"</span></div>
+        <div class="t-line t-out">&nbsp;&nbsp;]</div>
+        <div class="t-line t-out">}</div>
+        <div class="t-line" style="margin-top:10px">
+          <span class="t-prompt">$ </span><span class="t-cursor"></span>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="fu" style="transition-delay:0.2s">
-    <h1 class="hero-h">Automate the<br><span class="g">infrastructure</span><span class="d">.</span></h1>
-    <p class="hero-sub">DevOps · <span>Cloud & Containers</span> · CI/CD Pipelines · Infrastructure as Code</p>
-    <div class="pills">
-      <span class="pill on">AWS / GCP</span>
-      <span class="pill on">Docker · K8s</span>
-      <span class="pill on">Terraform</span>
-      <span class="pill on">Jenkins · GH Actions</span>
-      <span class="pill">Linux</span>
-      <span class="pill">Python · Bash</span>
-    </div>
-    <div class="btns">
-      <a href="#projects" class="btn btn-g">$ ls ./projects</a>
-      <a href="https://www.linkedin.com/in/mayur0522" target="_blank" class="btn btn-o">LinkedIn ↗</a>
+    <!-- Right: Hero text -->
+    <div class="hero-text fade-up" style="animation-delay:0.15s">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>Available for DevOps · SRE · Cloud Roles
+      </div>
+      <h1 class="hero-heading">
+        Mayur<br>
+        <span class="heading-accent">Bhosale</span>
+      </h1>
+      <p class="hero-role">DevOps Engineer <span class="role-sep">//</span> Cloud Architect</p>
+      <p class="hero-bio">
+        2 years building production-grade CI/CD pipelines, Kubernetes platforms, and cloud infrastructure on AWS &amp; GCP. 
+        Certified AWS SA &amp; GCP ACE. Passionate about DevSecOps, GitOps, and GPU inference serving.
+      </p>
+      <div class="cert-row">
+        <div class="cert-badge">
+          <span class="cert-icon">☁️</span>
+          <span>AWS SA Associate</span>
+        </div>
+        <div class="cert-badge">
+          <span class="cert-icon">☁️</span>
+          <span>GCP Cloud Engineer</span>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">$ ls ./projects</a>
+        <a href="https://www.linkedin.com/in/mayurbhosale2299/" target="_blank" class="btn btn-outline">LinkedIn ↗</a>
+        <a href="https://github.com/mayur0522" target="_blank" class="btn btn-outline">GitHub ↗</a>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- SKILLS -->
 <section id="skills">
-  <div class="wrap">
-    <div class="sec-lbl fu">Skills</div>
-    <h2 class="sec-h fu" style="transition-delay:0.05s">The <span class="g">pipeline</span> stack</h2>
+  <div class="section-wrap">
+    <div class="section-label fade-up">// skills</div>
+    <h2 class="section-heading fade-up">The <span class="accent">stack</span></h2>
 
-    <div class="pipeline fu" style="transition-delay:0.1s">
-      <div class="ps">
-        <div class="ps-name">Source</div>
-        <div class="ps-tool on">Git</div>
-        <div class="ps-tool on">GitHub</div>
-        <div class="ps-tool on">GitLab</div>
-      </div>
-      <div class="ps">
-        <div class="ps-name">Build</div>
-        <div class="ps-tool on">Docker</div>
-        <div class="ps-tool on">Maven</div>
-        <div class="ps-tool">Gradle</div>
-      </div>
-      <div class="ps">
-        <div class="ps-name">Test</div>
-        <div class="ps-tool on">SonarQube</div>
-        <div class="ps-tool on">JUnit</div>
-        <div class="ps-tool">Pytest</div>
-      </div>
-      <div class="ps">
-        <div class="ps-name">CI/CD</div>
-        <div class="ps-tool on">Jenkins</div>
-        <div class="ps-tool on">GH Actions</div>
-        <div class="ps-tool">ArgoCD</div>
-      </div>
-      <div class="ps">
-        <div class="ps-name">Deploy</div>
-        <div class="ps-tool on">Kubernetes</div>
-        <div class="ps-tool on">Helm</div>
-        <div class="ps-tool on">ECS</div>
-      </div>
-      <div class="ps">
-        <div class="ps-name">Cloud</div>
-        <div class="ps-tool on">AWS</div>
-        <div class="ps-tool on">GCP</div>
-        <div class="ps-tool">Azure</div>
-      </div>
-      <div class="ps">
-        <div class="ps-name">Monitor</div>
-        <div class="ps-tool on">Prometheus</div>
-        <div class="ps-tool on">Grafana</div>
-        <div class="ps-tool">ELK</div>
+    <!-- Pipeline viz -->
+    <div class="pipeline-wrap fade-up">
+      <div class="pipeline">
+        <div class="pipe-stage">
+          <div class="pipe-icon">📁</div>
+          <div class="pipe-name">Source</div>
+          <div class="pipe-tools">
+            <span class="pt active">Git</span>
+            <span class="pt active">GitHub</span>
+            <span class="pt active">GitLab</span>
+          </div>
+        </div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-stage">
+          <div class="pipe-icon">🔨</div>
+          <div class="pipe-name">Build</div>
+          <div class="pipe-tools">
+            <span class="pt active">Docker</span>
+            <span class="pt active">Maven</span>
+            <span class="pt active">Helm</span>
+          </div>
+        </div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-stage">
+          <div class="pipe-icon">🔍</div>
+          <div class="pipe-name">Scan</div>
+          <div class="pipe-tools">
+            <span class="pt active">SonarQube</span>
+            <span class="pt active">Trivy</span>
+            <span class="pt active">OWASP ZAP</span>
+          </div>
+        </div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-stage">
+          <div class="pipe-icon">⚙️</div>
+          <div class="pipe-name">CI/CD</div>
+          <div class="pipe-tools">
+            <span class="pt active">Jenkins</span>
+            <span class="pt active">GH Actions</span>
+            <span class="pt active">ArgoCD</span>
+          </div>
+        </div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-stage">
+          <div class="pipe-icon">🚀</div>
+          <div class="pipe-name">Deploy</div>
+          <div class="pipe-tools">
+            <span class="pt active">EKS/GKE</span>
+            <span class="pt active">Helm</span>
+            <span class="pt active">Kustomize</span>
+          </div>
+        </div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-stage">
+          <div class="pipe-icon">📊</div>
+          <div class="pipe-name">Monitor</div>
+          <div class="pipe-tools">
+            <span class="pt active">Prometheus</span>
+            <span class="pt active">Grafana</span>
+            <span class="pt active">CloudWatch</span>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="sk-cats fu" style="transition-delay:0.15s">
-      <div class="sk-cat">
-        <div class="sk-cat-name">Infrastructure as Code</div>
+    <!-- Skill grid -->
+    <div class="skill-grid">
+      <div class="skill-card fade-up">
+        <div class="skill-card-header">
+          <span class="sk-icon">☁️</span>
+          <span class="sk-title">Cloud Platforms</span>
+        </div>
         <div class="sk-tags">
-          <span class="sk-tag">Terraform</span>
-          <span class="sk-tag">Ansible</span>
-          <span class="sk-tag">CloudFormation</span>
-          <span class="sk-tag">Pulumi</span>
+          <span>AWS EC2/EKS/S3</span><span>RDS · Lambda</span><span>IAM · VPC</span>
+          <span>Route 53 · SNS</span><span>GCP Compute</span><span>GKE · BigQuery</span>
+          <span>Cloud Functions</span>
         </div>
       </div>
-      <div class="sk-cat">
-        <div class="sk-cat-name">Containerization</div>
+      <div class="skill-card fade-up" style="animation-delay:0.05s">
+        <div class="skill-card-header">
+          <span class="sk-icon">📦</span>
+          <span class="sk-title">Containers & Orchestration</span>
+        </div>
         <div class="sk-tags">
-          <span class="sk-tag">Docker</span>
-          <span class="sk-tag">Kubernetes</span>
-          <span class="sk-tag">Helm</span>
-          <span class="sk-tag">Podman</span>
+          <span>Docker</span><span>Kubernetes</span><span>Helm</span>
+          <span>ArgoCD</span><span>Kustomize</span><span>Istio</span><span>EKS · GKE · AKS</span>
         </div>
       </div>
-      <div class="sk-cat">
-        <div class="sk-cat-name">Cloud Platforms</div>
+      <div class="skill-card fade-up" style="animation-delay:0.1s">
+        <div class="skill-card-header">
+          <span class="sk-icon">🔧</span>
+          <span class="sk-title">Infrastructure as Code</span>
+        </div>
         <div class="sk-tags">
-          <span class="sk-tag">AWS EC2/S3/EKS</span>
-          <span class="sk-tag">GCP</span>
-          <span class="sk-tag">Lambda</span>
-          <span class="sk-tag">VPC/IAM</span>
+          <span>Terraform</span><span>Ansible</span><span>CloudFormation</span>
+          <span>Pulumi</span><span>Vault</span>
         </div>
       </div>
-      <div class="sk-cat">
-        <div class="sk-cat-name">Scripting & Automation</div>
+      <div class="skill-card fade-up" style="animation-delay:0.15s">
+        <div class="skill-card-header">
+          <span class="sk-icon">🔐</span>
+          <span class="sk-title">DevSecOps</span>
+        </div>
         <div class="sk-tags">
-          <span class="sk-tag">Bash</span>
-          <span class="sk-tag">Python</span>
-          <span class="sk-tag">YAML</span>
-          <span class="sk-tag">PowerShell</span>
+          <span>SonarQube</span><span>Trivy</span><span>OWASP ZAP</span>
+          <span>HashiCorp Vault</span><span>Open Telemetry</span><span>OpenObserve</span>
         </div>
       </div>
-      <div class="sk-cat">
-        <div class="sk-cat-name">Monitoring & Logging</div>
+      <div class="skill-card fade-up" style="animation-delay:0.2s">
+        <div class="skill-card-header">
+          <span class="sk-icon">📈</span>
+          <span class="sk-title">Monitoring & Observability</span>
+        </div>
         <div class="sk-tags">
-          <span class="sk-tag">Prometheus</span>
-          <span class="sk-tag">Grafana</span>
-          <span class="sk-tag">ELK Stack</span>
-          <span class="sk-tag">Datadog</span>
+          <span>Prometheus</span><span>Grafana</span><span>ELK Stack</span>
+          <span>CloudWatch</span><span>Azure Monitor</span><span>Log Analytics</span>
         </div>
       </div>
-      <div class="sk-cat">
-        <div class="sk-cat-name">Version Control</div>
+      <div class="skill-card fade-up" style="animation-delay:0.25s">
+        <div class="skill-card-header">
+          <span class="sk-icon">💻</span>
+          <span class="sk-title">Scripting & Automation</span>
+        </div>
         <div class="sk-tags">
-          <span class="sk-tag">Git</span>
-          <span class="sk-tag">GitHub</span>
-          <span class="sk-tag">GitLab</span>
-          <span class="sk-tag">Jira</span>
+          <span>Bash · Shell</span><span>Python</span><span>YAML</span>
+          <span>Cron Jobs</span><span>Linux (RHEL/CentOS)</span>
         </div>
       </div>
     </div>
@@ -174,45 +244,240 @@
 
 <!-- PROJECTS -->
 <section id="projects">
-  <div class="wrap">
-    <div class="sec-lbl fu">GitHub Repositories</div>
-    <h2 class="sec-h fu" style="transition-delay:0.05s">Open source <span class="g">work</span></h2>
-    <div class="pg" id="pg">
-      <div class="sk-card"><div class="sk-row" style="width:35%"></div><div class="sk-row" style="width:75%"></div><div class="sk-row"></div><div class="sk-row" style="width:50%"></div></div>
-      <div class="sk-card"><div class="sk-row" style="width:35%"></div><div class="sk-row" style="width:75%"></div><div class="sk-row"></div><div class="sk-row" style="width:50%"></div></div>
-      <div class="sk-card"><div class="sk-row" style="width:35%"></div><div class="sk-row" style="width:75%"></div><div class="sk-row"></div><div class="sk-row" style="width:50%"></div></div>
+  <div class="section-wrap">
+    <div class="section-label fade-up">// projects</div>
+    <h2 class="section-heading fade-up">Personal <span class="accent">projects</span></h2>
+    <p class="section-sub fade-up">Production-grade DevOps implementations & real-world infrastructure solutions.</p>
+
+    <div class="project-grid">
+
+      <!-- Project 1: LLM Deployment — FEATURED -->
+      <div class="project-card featured fade-up">
+        <div class="proj-top">
+          <div class="proj-number">P-04</div>
+          <div class="proj-score">
+            <span class="score-label">Score</span>
+            <span class="score-val">7.8</span>
+            <span class="score-stars">⭐⭐⭐⭐</span>
+          </div>
+        </div>
+        <div class="proj-tag-row">
+          <span class="proj-tag tag-ai">AI/ML</span>
+          <span class="proj-tag tag-k8s">Kubernetes</span>
+          <span class="proj-tag tag-gpu">GPU</span>
+        </div>
+        <h3 class="proj-title">LLM Deployment on Kubernetes</h3>
+        <p class="proj-subtitle">vLLM · PagedAttention · Tensor Parallelism</p>
+        <p class="proj-desc">
+          High-performance GPU LLM inference with vLLM on Kubernetes. 
+          Implements PagedAttention, continuous batching, and tensor parallelism for 
+          state-of-the-art serving efficiency. GPU scheduling via NVIDIA device plugin, 
+          containerized HuggingFace model deployment at production scale.
+        </p>
+        <div class="proj-metrics">
+          <div class="metric">
+            <span class="metric-label">AI/ML Integration</span>
+            <div class="metric-bar"><div class="metric-fill" style="width:100%"></div></div>
+            <span class="metric-val">10/10</span>
+          </div>
+          <div class="metric">
+            <span class="metric-label">Tech Breadth</span>
+            <div class="metric-bar"><div class="metric-fill" style="width:80%"></div></div>
+            <span class="metric-val">8/10</span>
+          </div>
+          <div class="metric">
+            <span class="metric-label">Learning Value</span>
+            <div class="metric-bar"><div class="metric-fill" style="width:80%"></div></div>
+            <span class="metric-val">8/10</span>
+          </div>
+          <div class="metric">
+            <span class="metric-label">DevOps Maturity</span>
+            <div class="metric-bar"><div class="metric-fill" style="width:70%"></div></div>
+            <span class="metric-val">7/10</span>
+          </div>
+        </div>
+        <div class="proj-stack">
+          <span>vLLM</span><span>Kubernetes</span><span>NVIDIA Device Plugin</span>
+          <span>HuggingFace</span><span>Python</span><span>Docker</span>
+        </div>
+        <div class="proj-footer">
+          <a href="https://github.com/mayur0522" target="_blank" class="proj-link">$ open repo →</a>
+          <span class="proj-highlight">🏆 Niche GPU expertise — top-tier 2025/2026 skill</span>
+        </div>
+      </div>
+
+      <!-- Project 2: E-Commerce CI/CD -->
+      <div class="project-card fade-up" style="animation-delay:0.1s">
+        <div class="proj-top">
+          <div class="proj-number">P-01</div>
+        </div>
+        <div class="proj-tag-row">
+          <span class="proj-tag tag-k8s">Kubernetes</span>
+          <span class="proj-tag tag-cicd">CI/CD</span>
+        </div>
+        <h3 class="proj-title">E-Commerce Platform Modernization</h3>
+        <p class="proj-subtitle">EKS · Helm · Argo-CD · GitHub Actions</p>
+        <p class="proj-desc">
+          Full microservices modernization on AWS EKS with Istio service mesh, 
+          automated GitOps via Argo-CD, and Vault-based secrets management. 
+          Achieved 98% deployment success rate and 30% reduction in incident response time.
+        </p>
+        <div class="proj-stack">
+          <span>EKS</span><span>Istio</span><span>ArgoCD</span>
+          <span>Helm</span><span>Vault</span><span>Kafka</span><span>Cassandra</span>
+        </div>
+        <div class="proj-footer">
+          <a href="https://github.com/mayur0522" target="_blank" class="proj-link">$ open repo →</a>
+        </div>
+      </div>
+
+      <!-- Project 3: Terraform IaC -->
+      <div class="project-card fade-up" style="animation-delay:0.15s">
+        <div class="proj-top">
+          <div class="proj-number">P-02</div>
+        </div>
+        <div class="proj-tag-row">
+          <span class="proj-tag tag-iac">IaC</span>
+          <span class="proj-tag tag-aws">AWS</span>
+        </div>
+        <h3 class="proj-title">Cloud Infrastructure Automation</h3>
+        <p class="proj-subtitle">Terraform · AWS · Ansible</p>
+        <p class="proj-desc">
+          End-to-end infrastructure provisioning with Terraform modules for VPC, EKS, 
+          RDS, and IAM. Ansible playbooks for server configuration and patching. 
+          Saved 400+ man-hours annually through automation.
+        </p>
+        <div class="proj-stack">
+          <span>Terraform</span><span>Ansible</span><span>AWS VPC</span>
+          <span>IAM</span><span>Bash</span>
+        </div>
+        <div class="proj-footer">
+          <a href="https://github.com/mayur0522" target="_blank" class="proj-link">$ open repo →</a>
+        </div>
+      </div>
+
+      <!-- Project 4: Monitoring Stack -->
+      <div class="project-card fade-up" style="animation-delay:0.2s">
+        <div class="proj-top">
+          <div class="proj-number">P-03</div>
+        </div>
+        <div class="proj-tag-row">
+          <span class="proj-tag tag-monitor">Monitoring</span>
+          <span class="proj-tag tag-devsec">DevSecOps</span>
+        </div>
+        <h3 class="proj-title">Observability & Security Platform</h3>
+        <p class="proj-subtitle">Prometheus · Grafana · OpenTelemetry</p>
+        <p class="proj-desc">
+          Full-stack observability with Prometheus, Grafana dashboards, and OpenTelemetry 
+          tracing. Integrated DevSecOps pipeline with SonarQube, Trivy container scanning, 
+          and OWASP ZAP. Reduced MTTR by 40%.
+        </p>
+        <div class="proj-stack">
+          <span>Prometheus</span><span>Grafana</span><span>OpenTelemetry</span>
+          <span>Trivy</span><span>OWASP ZAP</span><span>SonarQube</span>
+        </div>
+        <div class="proj-footer">
+          <a href="https://github.com/mayur0522" target="_blank" class="proj-link">$ open repo →</a>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
 <!-- EXPERIENCE -->
-<section id="exp">
-  <div class="wrap">
-    <div class="sec-lbl fu">Experience</div>
-    <h2 class="sec-h fu" style="transition-delay:0.05s">Work <span class="g">history</span></h2>
-    <div class="tl">
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-role">DevOps Engineer</div>
-        <div class="tl-co">[ Update with your company name ]</div>
-        <div class="tl-date">2023 – Present</div>
-        <ul class="tl-desc">
-          <li>Designed and maintained CI/CD pipelines with Jenkins & GitHub Actions</li>
-          <li>Containerized microservices with Docker; orchestrated via Kubernetes on AWS EKS</li>
-          <li>Provisioned cloud infrastructure using Terraform (IaC) on AWS</li>
-          <li>Built monitoring dashboards with Prometheus & Grafana; reduced MTTR by 40%</li>
-        </ul>
+<section id="experience">
+  <div class="section-wrap">
+    <div class="section-label fade-up">// experience</div>
+    <h2 class="section-heading fade-up">Work <span class="accent">history</span></h2>
+
+    <div class="timeline">
+      <div class="tl-item fade-up">
+        <div class="tl-left">
+          <div class="tl-date">Dec 2025 – Present</div>
+          <div class="tl-line">
+            <div class="tl-dot active"></div>
+          </div>
+        </div>
+        <div class="tl-right">
+          <div class="tl-company">Instrim Labs LLP, Pune</div>
+          <div class="tl-role">DevOps Engineer</div>
+          <div class="tl-stack">
+            <span>EKS</span><span>Helm</span><span>Terraform</span>
+            <span>GitHub Actions</span><span>ArgoCD</span><span>Vault</span>
+          </div>
+          <ul class="tl-bullets">
+            <li>Administered and troubleshot Kubernetes (EKS) clusters with Helm chart deployments and zero-downtime node upgrades</li>
+            <li>Built YAML-based reusable pipeline templates — <strong>25% increase in pipeline efficiency</strong></li>
+            <li>Provisioned scalable infrastructure with Terraform — <strong>98% deployment success rate</strong></li>
+            <li>Designed monitoring/alerting stack — <strong>30% reduction in incident response time</strong></li>
+            <li>Drove <strong>10% cost reduction</strong> via Amazon Cost Management; saved <strong>400+ man-hours/year</strong> via automation</li>
+          </ul>
+        </div>
       </div>
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-role">Systems / Cloud Intern</div>
-        <div class="tl-co">[ Update with your company name ]</div>
-        <div class="tl-date">2022 – 2023</div>
-        <ul class="tl-desc">
-          <li>Automated server provisioning using Ansible playbooks</li>
-          <li>Assisted migrating on-premise workloads to AWS EC2 & S3</li>
-          <li>Wrote Bash & Python scripts to streamline deployment workflows</li>
-        </ul>
+
+      <div class="tl-item fade-up" style="animation-delay:0.1s">
+        <div class="tl-left">
+          <div class="tl-date">Feb – Jul 2024</div>
+          <div class="tl-line">
+            <div class="tl-dot"></div>
+          </div>
+        </div>
+        <div class="tl-right">
+          <div class="tl-company">Randstad → Varian (Siemens Healthineers)</div>
+          <div class="tl-role">System Administrator / Cloud Engineer</div>
+          <div class="tl-stack">
+            <span>GCP</span><span>Linux</span><span>Python</span>
+            <span>Bash</span><span>RPM/YUM</span>
+          </div>
+          <ul class="tl-bullets">
+            <li>Provided L1/L2 support for GCP environments, ensuring high availability of critical clinical workloads</li>
+            <li>Automated package installation, patching, and configuration via RPM, YUM, and APT</li>
+            <li>Designed automation workflows reducing manual effort in system configuration tasks</li>
+            <li>Managed user access, service configs, and system health across Linux environments</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education & Certs -->
+    <div class="edu-cert-row">
+      <div class="edu-block fade-up">
+        <div class="block-label">// education</div>
+        <div class="edu-item">
+          <div class="edu-degree">Master of Computer Applications</div>
+          <div class="edu-school">Sinhagad Institute of Management, Pune</div>
+          <div class="edu-year">Nov 2022 – Jun 2024</div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-degree">Bachelor of Computer Applications</div>
+          <div class="edu-school">Bharati Vidyapeeth Institute, Kolhapur</div>
+          <div class="edu-year">Apr 2018 – Sep 2021</div>
+        </div>
+      </div>
+
+      <div class="cert-block fade-up" style="animation-delay:0.1s">
+        <div class="block-label">// certifications</div>
+        <div class="cert-item">
+          <div class="cert-badge-big">
+            <span class="cbb-icon">☁️</span>
+            <div>
+              <div class="cbb-title">AWS Certified Solutions Architect</div>
+              <div class="cbb-sub">Associate · Validated</div>
+              <div class="cbb-code">484114bec24b4a04916b9dea69823a22</div>
+            </div>
+          </div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-badge-big">
+            <span class="cbb-icon">🌐</span>
+            <div>
+              <div class="cbb-title">Google Cloud Certified</div>
+              <div class="cbb-sub">Associate Cloud Engineer · Validated</div>
+              <div class="cbb-code">04f6d6fcdb9f434fa02e32fb7456d7f4</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -220,35 +485,61 @@
 
 <!-- CONTACT -->
 <section id="contact">
-  <div class="wrap">
-    <div class="sec-lbl fu">Contact</div>
-    <div class="cbox fu" style="transition-delay:0.1s">
-      <div class="ctop">
-        <div>
-          <div class="ch">Let's ship something <span class="g">great</span>.</div>
-          <p class="csub">Open to DevOps, SRE, and Cloud Engineering roles. Also happy to discuss collaborations, open source, and infrastructure challenges.</p>
+  <div class="section-wrap">
+    <div class="section-label fade-up">// contact</div>
+    <div class="contact-box fade-up">
+      <div class="contact-inner">
+        <div class="contact-left">
+          <div class="open-badge">
+            <span class="ob-dot"></span>
+            System online · Available for opportunities
+          </div>
+          <h2 class="contact-heading">Let's ship something<br><span class="accent">great</span>.</h2>
+          <p class="contact-sub">
+            Open to DevOps Engineer, SRE, and Cloud Engineering roles.<br>
+            Happy to discuss collaborations, open source, and infrastructure challenges.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:mayurbhosalen9@gmail.com" class="contact-link">
+              <span class="cl-icon">✉</span>
+              <span>mayurbhosalen9@gmail.com</span>
+              <span class="cl-arrow">→</span>
+            </a>
+            <a href="https://www.linkedin.com/in/mayurbhosale2299/" target="_blank" class="contact-link">
+              <span class="cl-icon">⬡</span>
+              <span>linkedin.com/in/mayurbhosale2299</span>
+              <span class="cl-arrow">→</span>
+            </a>
+            <a href="https://github.com/mayur0522" target="_blank" class="contact-link">
+              <span class="cl-icon">⌥</span>
+              <span>github.com/mayur0522</span>
+              <span class="cl-arrow">→</span>
+            </a>
+            <a href="tel:+917066117676" class="contact-link">
+              <span class="cl-icon">☎</span>
+              <span>+91 7066 117 676</span>
+              <span class="cl-arrow">→</span>
+            </a>
+          </div>
         </div>
-        <div class="clinks">
-          <a href="https://github.com/mayur0522" target="_blank" class="clink">
-            <span class="ci">⌥</span>
-            <span class="cl">github.com/mayur0522</span>
-            <span class="ca">→</span>
-          </a>
-          <a href="https://www.linkedin.com/in/mayur0522" target="_blank" class="clink">
-            <span class="ci">⬡</span>
-            <span class="cl">linkedin.com/in/mayur0522</span>
-            <span class="ca">→</span>
-          </a>
-          <a href="mailto:mayur@example.com" class="clink" id="email-lnk">
-            <span class="ci">✉</span>
-            <span class="cl" id="email-txt">mayur@example.com</span>
-            <span class="ca">→</span>
-          </a>
+        <div class="contact-right">
+          <div class="contact-terminal">
+            <div class="ct-header">
+              <div class="dots"><span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span></div>
+              <span>availability.sh</span>
+            </div>
+            <div class="ct-body">
+              <div class="t-line"><span class="t-prompt">$ </span><span class="t-cmd">./check_availability.sh</span></div>
+              <div class="t-line t-out" style="color:#4ade80">✓ Status: AVAILABLE</div>
+              <div class="t-line t-out">✓ Roles: DevOps / SRE / Cloud</div>
+              <div class="t-line t-out">✓ Location: Pune, India</div>
+              <div class="t-line t-out">✓ Remote: YES</div>
+              <div class="t-line t-out">✓ Relocation: Open</div>
+              <div class="t-line t-out" style="margin-top:8px">✓ Notice Period: Negotiable</div>
+              <div class="t-line" style="margin-top:10px"><span class="t-prompt">$ </span><span class="t-cursor"></span></div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="cbot">
-        <div class="blink"></div>
-        <span>System online · Available for new opportunities</span>
       </div>
     </div>
   </div>
@@ -256,72 +547,100 @@
 
 <!-- FOOTER -->
 <footer>
-  <span>© 2025 Mayur · DevOps Engineer</span>
-  <span>Deployed on <a href="https://pages.github.com" target="_blank">GitHub Pages</a></span>
+  <div class="footer-inner">
+    <span class="footer-logo">mayur<span class="accent">@devops</span></span>
+    <span class="footer-copy">© 2025 Mayur Bhosale · DevOps &amp; Cloud Engineer</span>
+    <span class="footer-right">Pune, India 🇮🇳</span>
+  </div>
 </footer>
 
 <script>
-  // SCROLL FADE-IN
-  const io = new IntersectionObserver(
-    entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
-    { threshold: 0.07 }
-  );
-  document.querySelectorAll('.fu, .tl-item').forEach(el => io.observe(el));
+// Canvas particles
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+let W, H, particles = [];
 
-  // GITHUB PROFILE — auto-fill name, bio, email
-  (async () => {
-    try {
-      const d = await fetch('https://api.github.com/users/mayur0522').then(r => r.json());
-      if (d.name)  document.getElementById('tname').textContent = d.name;
-      if (d.bio)   document.getElementById('tbio').textContent  = d.bio;
-      if (d.email) {
-        document.getElementById('email-lnk').href             = 'mailto:' + d.email;
-        document.getElementById('email-txt').textContent      = d.email;
+function resize() {
+  W = canvas.width  = window.innerWidth;
+  H = canvas.height = window.innerHeight;
+}
+resize();
+window.addEventListener('resize', resize);
+
+for (let i = 0; i < 55; i++) {
+  particles.push({
+    x: Math.random() * window.innerWidth,
+    y: Math.random() * window.innerHeight,
+    vx: (Math.random() - 0.5) * 0.18,
+    vy: (Math.random() - 0.5) * 0.18,
+    r: Math.random() * 1.5 + 0.3,
+    a: Math.random() * 0.4 + 0.1
+  });
+}
+
+function drawParticles() {
+  ctx.clearRect(0, 0, W, H);
+  particles.forEach(p => {
+    p.x += p.vx; p.y += p.vy;
+    if (p.x < 0) p.x = W;
+    if (p.x > W) p.x = 0;
+    if (p.y < 0) p.y = H;
+    if (p.y > H) p.y = 0;
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(74, 222, 128, ${p.a})`;
+    ctx.fill();
+  });
+  // Draw connections
+  for (let i = 0; i < particles.length; i++) {
+    for (let j = i + 1; j < particles.length; j++) {
+      const dx = particles[i].x - particles[j].x;
+      const dy = particles[i].y - particles[j].y;
+      const dist = Math.sqrt(dx*dx + dy*dy);
+      if (dist < 110) {
+        ctx.beginPath();
+        ctx.strokeStyle = `rgba(74, 222, 128, ${0.06 * (1 - dist/110)})`;
+        ctx.lineWidth = 0.5;
+        ctx.moveTo(particles[i].x, particles[i].y);
+        ctx.lineTo(particles[j].x, particles[j].y);
+        ctx.stroke();
       }
-    } catch (e) {}
-  })();
-
-  // GITHUB REPOS — live fetch & render
-  (async () => {
-    const grid = document.getElementById('pg');
-    try {
-      const repos = await fetch(
-        'https://api.github.com/users/mayur0522/repos?sort=updated&per_page=30'
-      ).then(r => r.json());
-
-      const list = repos.filter(r => !r.fork && r.name !== 'mayur0522').slice(0, 9);
-
-      if (!list.length) {
-        grid.innerHTML = '<p style="color:var(--muted);font-size:0.78rem;grid-column:1/-1">No public repos found. <a href="https://github.com/mayur0522?tab=repositories" target="_blank" style="color:var(--green)">View on GitHub →</a></p>';
-        return;
-      }
-
-      grid.innerHTML = '';
-      list.forEach((r, i) => {
-        const card = document.createElement('div');
-        card.className = 'pc fu';
-        card.style.transitionDelay = (i * 0.055) + 's';
-        card.innerHTML = `
-          <div class="pc-head">
-            <div class="pc-name">${r.name}</div>
-            ${r.language ? `<div class="pc-lang">${r.language}</div>` : ''}
-          </div>
-          <div class="pc-desc">${r.description || 'No description provided.'}</div>
-          <div class="pc-foot">
-            <div class="pc-stats">
-              <span>★ ${r.stargazers_count}</span>
-              <span>⑂ ${r.forks_count}</span>
-            </div>
-            <a href="${r.html_url}" target="_blank" class="pc-link">$ open →</a>
-          </div>`;
-        grid.appendChild(card);
-        io.observe(card);
-      });
-    } catch (e) {
-      grid.innerHTML = `<p style="color:var(--muted);font-size:0.78rem;grid-column:1/-1">Could not load repos. <a href="https://github.com/mayur0522?tab=repositories" target="_blank" style="color:var(--green)">View on GitHub →</a></p>`;
     }
-  })();
-</script>
+  }
+  requestAnimationFrame(drawParticles);
+}
+drawParticles();
 
+// Scroll nav
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// Intersection observer for fade-up
+const io = new IntersectionObserver(
+  entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+  { threshold: 0.07 }
+);
+document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+
+// Metric bar animation — trigger widths when featured card enters view
+const metricObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.querySelectorAll('.metric-fill').forEach(bar => {
+        const target = bar.style.width;
+        bar.style.width = '0';
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            bar.style.transition = 'width 1.2s cubic-bezier(0.4,0,0.2,1)';
+            bar.style.width = target;
+          });
+        });
+      });
+    }
+  });
+}, { threshold: 0.2 });
+document.querySelectorAll('.project-card.featured').forEach(c => metricObs.observe(c));
+</script>
 </body>
 </html>
