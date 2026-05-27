@@ -25,7 +25,7 @@
     <a href="#contact">contact</a>
   </div>
   <div class="nav-cta">
-    <span class="hire-badge">⚡ Open to Work</span>
+    <a href="#contact" class="nav-cta-btn">BOOK A CALL</a>
   </div>
 </nav>
 
@@ -547,7 +547,7 @@ function draw() {
     if (p.y < 0) p.y = H; if (p.y > H) p.y = 0;
     ctx.beginPath();
     ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-    ctx.fillStyle = `rgba(255,45,45,${p.a})`;
+    ctx.fillStyle = `rgba(255, 60, 84, ${p.a})`;
     ctx.fill();
   });
   for (let i = 0; i < particles.length; i++) {
@@ -557,7 +557,7 @@ function draw() {
       const d  = Math.sqrt(dx*dx + dy*dy);
       if (d < 120) {
         ctx.beginPath();
-        ctx.strokeStyle = `rgba(255,45,45,${0.07*(1-d/120)})`;
+        ctx.strokeStyle = `rgba(255, 60, 84, ${0.07 * (1 - d / 120)})`;
         ctx.lineWidth = 0.6;
         ctx.moveTo(particles[i].x, particles[i].y);
         ctx.lineTo(particles[j].x, particles[j].y);
@@ -596,6 +596,113 @@ const mObs = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.2 });
 document.querySelectorAll('.project-card.featured').forEach(c => mObs.observe(c));
+
+/* ── PREMIUM CUSTOM CURSOR ── */
+(function() {
+  const dot = document.createElement('div');
+  const ring = document.createElement('div');
+  dot.className = 'custom-cursor-dot';
+  ring.className = 'custom-cursor-ring';
+  document.body.appendChild(dot);
+  document.body.appendChild(ring);
+
+  let mouseX = window.innerWidth / 2;
+  let mouseY = window.innerHeight / 2;
+  let ringX = window.innerWidth / 2;
+  let ringY = window.innerHeight / 2;
+  
+  let isHovering = false;
+  let isMouseInWindow = true;
+  let hasMoved = false;
+
+  window.addEventListener('mousemove', (e) => {
+    if (!hasMoved) {
+      hasMoved = true;
+      document.body.classList.add('custom-cursor-active');
+    }
+    
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    
+    dot.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+    
+    if (isMouseInWindow) {
+      dot.style.opacity = '1';
+      ring.style.opacity = '1';
+    }
+  });
+
+  window.addEventListener('touchstart', () => {
+    hasMoved = false;
+    document.body.classList.remove('custom-cursor-active');
+    dot.style.opacity = '0';
+    ring.style.opacity = '0';
+  }, { passive: true });
+
+  function tick() {
+    const lerp = 0.15;
+    ringX += (mouseX - ringX) * lerp;
+    ringY += (mouseY - ringY) * lerp;
+    
+    ring.style.transform = `translate3d(${ringX}px, ${ringY}px, 0)`;
+    
+    requestAnimationFrame(tick);
+  }
+  tick();
+
+  const updateHoverTargets = () => {
+    const targets = document.querySelectorAll('a, button, .btn, .btn-outline, .btn-primary, .project-card, .skill-card, .contact-link, .nav-cta-btn, [role="button"]');
+    targets.forEach(item => {
+      if (item.dataset.cursorBound) return;
+      item.dataset.cursorBound = 'true';
+      
+      item.addEventListener('mouseenter', () => {
+        dot.classList.add('hovered');
+        ring.classList.add('hovered');
+        isHovering = true;
+      });
+      
+      item.addEventListener('mouseleave', () => {
+        dot.classList.remove('hovered');
+        ring.classList.remove('hovered');
+        isHovering = false;
+      });
+    });
+  };
+  
+  updateHoverTargets();
+  setInterval(updateHoverTargets, 1500);
+
+  window.addEventListener('mousedown', () => {
+    if (!hasMoved) return;
+    dot.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0) scale(0.6)`;
+    ring.style.transform = `translate3d(${ringX}px, ${ringY}px, 0) scale(0.85)`;
+    dot.style.backgroundColor = '#ffffff';
+    ring.style.borderColor = '#ffffff';
+  });
+  
+  window.addEventListener('mouseup', () => {
+    if (!hasMoved) return;
+    dot.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+    ring.style.transform = `translate3d(${ringX}px, ${ringY}px, 0)`;
+    dot.style.backgroundColor = '';
+    ring.style.borderColor = '';
+  });
+
+  document.addEventListener('mouseleave', () => {
+    dot.style.opacity = '0';
+    ring.style.opacity = '0';
+    isMouseInWindow = false;
+  });
+  
+  document.addEventListener('mouseenter', () => {
+    if (hasMoved) {
+      dot.style.opacity = '1';
+      ring.style.opacity = '1';
+    }
+    isMouseInWindow = true;
+  });
+})();
 </script>
 </body>
 </html>
